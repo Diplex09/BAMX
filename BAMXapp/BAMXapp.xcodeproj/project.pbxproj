@@ -15,6 +15,7 @@
 		99829E0326DFC64400D5B6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99829E0126DFC64400D5B6FE /* LaunchScreen.storyboard */; };
 		99829E0E26DFC64400D5B6FE /* BAMXappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99829E0D26DFC64400D5B6FE /* BAMXappTests.swift */; };
 		99829E1926DFC64400D5B6FE /* BAMXappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99829E1826DFC64400D5B6FE /* BAMXappUITests.swift */; };
+		99829E2726DFCC6C00D5B6FE /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99829E2626DFCC6C00D5B6FE /* Signup.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		99829E1426DFC64400D5B6FE /* BAMXappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMXappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99829E1826DFC64400D5B6FE /* BAMXappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappUITests.swift; sourceTree = "<group>"; };
 		99829E1A26DFC64400D5B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99829E2626DFCC6C00D5B6FE /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				99829DF826DFC64300D5B6FE /* SceneDelegate.swift */,
 				99829DFA26DFC64300D5B6FE /* ViewController.swift */,
 				99829DFC26DFC64300D5B6FE /* Main.storyboard */,
+				99829E2626DFCC6C00D5B6FE /* Signup.storyboard */,
 				99829DFF26DFC64400D5B6FE /* Assets.xcassets */,
 				99829E0126DFC64400D5B6FE /* LaunchScreen.storyboard */,
 				99829E0426DFC64400D5B6FE /* Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				99829E0326DFC64400D5B6FE /* LaunchScreen.storyboard in Resources */,
 				99829E0026DFC64400D5B6FE /* Assets.xcassets in Resources */,
+				99829E2726DFCC6C00D5B6FE /* Signup.storyboard in Resources */,
 				99829DFE26DFC64300D5B6FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
