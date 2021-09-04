@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829426E3E93F008E8285 /* AppDelegate.swift */; };
+		9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829626E3E93F008E8285 /* SceneDelegate.swift */; };
+		9299829926E3E93F008E8285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829826E3E93F008E8285 /* ViewController.swift */; };
+		9299829C26E3E93F008E8285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9299829A26E3E93F008E8285 /* Main.storyboard */; };
+		9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9299829D26E3E93F008E8285 /* BAMXapp.xcdatamodeld */; };
+		929982A126E3E940008E8285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929982A026E3E940008E8285 /* Assets.xcassets */; };
+		929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929982A226E3E940008E8285 /* LaunchScreen.storyboard */; };
+		929982AF26E3E940008E8285 /* BAMXappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982AE26E3E940008E8285 /* BAMXappTests.swift */; };
+		929982BA26E3E940008E8285 /* BAMXappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982B926E3E940008E8285 /* BAMXappUITests.swift */; };
+		92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58E526E3EB56002B77D4 /* Signup.storyboard */; };
+		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
+		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929982AB26E3E940008E8285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9299828926E3E93F008E8285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9299829026E3E93F008E8285;
+			remoteInfo = BAMXapp;
+		};
+		929982B626E3E940008E8285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9299828926E3E93F008E8285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9299829026E3E93F008E8285;
+			remoteInfo = BAMXapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
+		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
+		9299829126E3E93F008E8285 /* BAMXapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMXapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9299829426E3E93F008E8285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9299829626E3E93F008E8285 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9299829826E3E93F008E8285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9299829B26E3E93F008E8285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9299829E26E3E93F008E8285 /* BAMXapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BAMXapp.xcdatamodel; sourceTree = "<group>"; };
+		929982A026E3E940008E8285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		929982A326E3E940008E8285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		929982A526E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929982AA26E3E940008E8285 /* BAMXappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMXappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929982AE26E3E940008E8285 /* BAMXappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappTests.swift; sourceTree = "<group>"; };
+		929982B026E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929982B526E3E940008E8285 /* BAMXappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMXappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929982B926E3E940008E8285 /* BAMXappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappUITests.swift; sourceTree = "<group>"; };
+		929982BB26E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AD58E526E3EB56002B77D4 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9299828E26E3E93F008E8285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982A726E3E940008E8285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982B226E3E940008E8285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33B3ED0571E5397E54832572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6168DA6D678B051F01E37824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */,
+				172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9299828826E3E93F008E8285 = {
+			isa = PBXGroup;
+			children = (
+				9299829326E3E93F008E8285 /* BAMXapp */,
+				929982AD26E3E940008E8285 /* BAMXappTests */,
+				929982B826E3E940008E8285 /* BAMXappUITests */,
+				9299829226E3E93F008E8285 /* Products */,
+				6168DA6D678B051F01E37824 /* Pods */,
+				33B3ED0571E5397E54832572 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9299829226E3E93F008E8285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9299829126E3E93F008E8285 /* BAMXapp.app */,
+				929982AA26E3E940008E8285 /* BAMXappTests.xctest */,
+				929982B526E3E940008E8285 /* BAMXappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9299829326E3E93F008E8285 /* BAMXapp */ = {
+			isa = PBXGroup;
+			children = (
+				9299829426E3E93F008E8285 /* AppDelegate.swift */,
+				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
+				9299829826E3E93F008E8285 /* ViewController.swift */,
+				9299829A26E3E93F008E8285 /* Main.storyboard */,
+				92AD58E526E3EB56002B77D4 /* Signup.storyboard */,
+				929982A026E3E940008E8285 /* Assets.xcassets */,
+				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
+				929982A526E3E940008E8285 /* Info.plist */,
+				92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */,
+				9299829D26E3E93F008E8285 /* BAMXapp.xcdatamodeld */,
+			);
+			path = BAMXapp;
+			sourceTree = "<group>";
+		};
+		929982AD26E3E940008E8285 /* BAMXappTests */ = {
+			isa = PBXGroup;
+			children = (
+				929982AE26E3E940008E8285 /* BAMXappTests.swift */,
+				929982B026E3E940008E8285 /* Info.plist */,
+			);
+			path = BAMXappTests;
+			sourceTree = "<group>";
+		};
+		929982B826E3E940008E8285 /* BAMXappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				929982B926E3E940008E8285 /* BAMXappUITests.swift */,
+				929982BB26E3E940008E8285 /* Info.plist */,
+			);
+			path = BAMXappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9299829026E3E93F008E8285 /* BAMXapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929982BE26E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXapp" */;
+			buildPhases = (
+				2738996E2590EDF0171BD64E /* [CP] Check Pods Manifest.lock */,
+				9299828D26E3E93F008E8285 /* Sources */,
+				9299828E26E3E93F008E8285 /* Frameworks */,
+				9299828F26E3E93F008E8285 /* Resources */,
+				D0E243678F28D25892153732 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BAMXapp;
+			productName = BAMXapp;
+			productReference = 9299829126E3E93F008E8285 /* BAMXapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929982A926E3E940008E8285 /* BAMXappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929982C126E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXappTests" */;
+			buildPhases = (
+				929982A626E3E940008E8285 /* Sources */,
+				929982A726E3E940008E8285 /* Frameworks */,
+				929982A826E3E940008E8285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929982AC26E3E940008E8285 /* PBXTargetDependency */,
+			);
+			name = BAMXappTests;
+			productName = BAMXappTests;
+			productReference = 929982AA26E3E940008E8285 /* BAMXappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		929982B426E3E940008E8285 /* BAMXappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929982C426E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXappUITests" */;
+			buildPhases = (
+				929982B126E3E940008E8285 /* Sources */,
+				929982B226E3E940008E8285 /* Frameworks */,
+				929982B326E3E940008E8285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929982B726E3E940008E8285 /* PBXTargetDependency */,
+			);
+			name = BAMXappUITests;
+			productName = BAMXappUITests;
+			productReference = 929982B526E3E940008E8285 /* BAMXappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9299828926E3E93F008E8285 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9299829026E3E93F008E8285 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					929982A926E3E940008E8285 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9299829026E3E93F008E8285;
+					};
+					929982B426E3E940008E8285 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9299829026E3E93F008E8285;
+					};
+				};
+			};
+			buildConfigurationList = 9299828C26E3E93F008E8285 /* Build configuration list for PBXProject "BAMXapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9299828826E3E93F008E8285;
+			productRefGroup = 9299829226E3E93F008E8285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9299829026E3E93F008E8285 /* BAMXapp */,
+				929982A926E3E940008E8285 /* BAMXappTests */,
+				929982B426E3E940008E8285 /* BAMXappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9299828F26E3E93F008E8285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */,
+				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
+				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
+				92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */,
+				9299829C26E3E93F008E8285 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982A826E3E940008E8285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982B326E3E940008E8285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2738996E2590EDF0171BD64E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BAMXapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E243678F28D25892153732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BAMXapp/Pods-BAMXapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BAMXapp/Pods-BAMXapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BAMXapp/Pods-BAMXapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9299828D26E3E93F008E8285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9299829926E3E93F008E8285 /* ViewController.swift in Sources */,
+				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
+				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
+				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982A626E3E940008E8285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929982AF26E3E940008E8285 /* BAMXappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929982B126E3E940008E8285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929982BA26E3E940008E8285 /* BAMXappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		929982AC26E3E940008E8285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9299829026E3E93F008E8285 /* BAMXapp */;
+			targetProxy = 929982AB26E3E940008E8285 /* PBXContainerItemProxy */;
+		};
+		929982B726E3E940008E8285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9299829026E3E93F008E8285 /* BAMXapp */;
+			targetProxy = 929982B626E3E940008E8285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9299829A26E3E93F008E8285 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9299829B26E3E93F008E8285 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		929982A226E3E940008E8285 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929982A326E3E940008E8285 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		929982BC26E3E940008E8285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		929982BD26E3E940008E8285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929982BF26E3E940008E8285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		929982C026E3E940008E8285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		929982C226E3E940008E8285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAMXapp.app/BAMXapp";
+			};
+			name = Debug;
+		};
+		929982C326E3E940008E8285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAMXapp.app/BAMXapp";
+			};
+			name = Release;
+		};
+		929982C526E3E940008E8285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BAMXapp;
+			};
+			name = Debug;
+		};
+		929982C626E3E940008E8285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BAMXappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nacho.BAMXappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BAMXapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9299828C26E3E93F008E8285 /* Build configuration list for PBXProject "BAMXapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929982BC26E3E940008E8285 /* Debug */,
+				929982BD26E3E940008E8285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929982BE26E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929982BF26E3E940008E8285 /* Debug */,
+				929982C026E3E940008E8285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929982C126E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929982C226E3E940008E8285 /* Debug */,
+				929982C326E3E940008E8285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929982C426E3E940008E8285 /* Build configuration list for PBXNativeTarget "BAMXappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929982C526E3E940008E8285 /* Debug */,
+				929982C626E3E940008E8285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9299829D26E3E93F008E8285 /* BAMXapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9299829E26E3E93F008E8285 /* BAMXapp.xcdatamodel */,
+			);
+			currentVersion = 9299829E26E3E93F008E8285 /* BAMXapp.xcdatamodel */;
+			path = BAMXapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9299828926E3E93F008E8285 /* Project object */;
+}
