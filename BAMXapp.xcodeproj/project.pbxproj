@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922CAD0A26E3FAF800DB9DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CAD0926E3FAF800DB9DED /* User.swift */; };
 		9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829426E3E93F008E8285 /* AppDelegate.swift */; };
 		9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829626E3E93F008E8285 /* SceneDelegate.swift */; };
 		9299829926E3E93F008E8285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829826E3E93F008E8285 /* ViewController.swift */; };
@@ -16,8 +17,11 @@
 		929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929982A226E3E940008E8285 /* LaunchScreen.storyboard */; };
 		929982AF26E3E940008E8285 /* BAMXappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982AE26E3E940008E8285 /* BAMXappTests.swift */; };
 		929982BA26E3E940008E8285 /* BAMXappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982B926E3E940008E8285 /* BAMXappUITests.swift */; };
+		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
 		92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58E526E3EB56002B77D4 /* Signup.storyboard */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
+		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
+		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,7 @@
 /* Begin PBXFileReference section */
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
 		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
+		922CAD0926E3FAF800DB9DED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9299829126E3E93F008E8285 /* BAMXapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMXapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9299829426E3E93F008E8285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9299829626E3E93F008E8285 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +61,11 @@
 		929982B526E3E940008E8285 /* BAMXappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMXappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929982B926E3E940008E8285 /* BAMXappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappUITests.swift; sourceTree = "<group>"; };
 		929982BB26E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92AD58E526E3EB56002B77D4 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
+		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +109,6 @@
 				64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */,
 				172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,8 @@
 		9299829326E3E93F008E8285 /* BAMXapp */ = {
 			isa = PBXGroup;
 			children = (
+				92AD591926E3F0EE002B77D4 /* Model */,
+				92AD591826E3F0D8002B77D4 /* Controller */,
 				9299829426E3E93F008E8285 /* AppDelegate.swift */,
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
@@ -160,6 +169,24 @@
 				929982BB26E3E940008E8285 /* Info.plist */,
 			);
 			path = BAMXappUITests;
+			sourceTree = "<group>";
+		};
+		92AD591826E3F0D8002B77D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92AD591926E3F0EE002B77D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92C70AAC26E3F584008290EA /* FoodDonation.swift */,
+				92C70AB226E3F61D008290EA /* Item.swift */,
+				922CAD0926E3FAF800DB9DED /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9299829926E3E93F008E8285 /* ViewController.swift in Sources */,
+				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
+				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
+				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
 				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
+				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
