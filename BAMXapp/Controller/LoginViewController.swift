@@ -45,18 +45,69 @@ class LoginViewController: UIViewController
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        <#code#>
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        guard let handle = handle else{return }
+        
+        Auth.auth().removeStateDidChangeListener(handle)
+    }
+    
+    //Login
     @IBAction func loginDidTouch(_ sender:
     AnyObject) {
+        //Require email & password
+        guard
+            let email = enterEmail.text,
+            let password = enterPassword.text,
+            !email.isEmpty,
+            !password.isEmpty
+        else {
+            return
+        }
         
+        //Start login code
+        Auth.auth().signIn(withEmail: email, password: password){ user, error in
+            if let error = error, user == nil {
+                let alert = UIAlertController(
+                    title: "Sign infailed :(",
+                    message: error.localizedDescription,
+                    preferredStyle: .alert
+                )
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
+    //Sign up
     @IBAction func signUpDidTouch(_ sender:
     AnyObject) {
+        // Register user
+        guard
+            let email = enterEmail.text,
+            let password = enterPassword.text,
+            !email.isEmpty,
+            !password.isEmpty
+        else {
+            return
+        }
         
+        // Sign up code
+        Auth.auth().createUser(withEmail: email, password: password) { _, error in
+            if error == nil {
+                Auth.auth().signIn(withEmail: email, password: password)
+            }
+            else
+            {
+                print("Error creating user: \(error?.localizedDescription)")
+            }
+        }
     }
 }
 
