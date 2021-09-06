@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		922CAD0A26E3FAF800DB9DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CAD0926E3FAF800DB9DED /* User.swift */; };
+		928A48F426E6817B001CD187 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928A48F326E6817B001CD187 /* Introduction.storyboard */; };
+		928A490126E68895001CD187 /* AppIconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 928A490026E68895001CD187 /* AppIconImage.png */; };
 		9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829426E3E93F008E8285 /* AppDelegate.swift */; };
 		9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829626E3E93F008E8285 /* SceneDelegate.swift */; };
 		9299829926E3E93F008E8285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299829826E3E93F008E8285 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
 		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
 		922CAD0926E3FAF800DB9DED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		928A48F326E6817B001CD187 /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		928A490026E68895001CD187 /* AppIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIconImage.png; sourceTree = "<group>"; };
 		9299829126E3E93F008E8285 /* BAMXapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMXapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9299829426E3E93F008E8285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9299829626E3E93F008E8285 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,10 +147,12 @@
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
+				928A48F326E6817B001CD187 /* Introduction.storyboard */,
 				92AD58E526E3EB56002B77D4 /* Signup.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
+				928A490026E68895001CD187 /* AppIconImage.png */,
 				92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */,
 				9299829D26E3E93F008E8285 /* BAMXapp.xcdatamodeld */,
 			);
@@ -294,8 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928A490126E68895001CD187 /* AppIconImage.png in Resources */,
 				929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */,
 				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
+				928A48F426E6817B001CD187 /* Introduction.storyboard in Resources */,
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
 				92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */,
 				9299829C26E3E93F008E8285 /* Main.storyboard in Resources */,

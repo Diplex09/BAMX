@@ -65,19 +65,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eres nuevo usuar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-ls-gOk">
-                                <rect key="frame" x="62" y="785" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4z-Xe-YvD">
                                 <rect key="frame" x="144" y="551" width="126" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cyan="0.20000000000000001" magenta="0.98999999999999999" yellow="0.85999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Log in">
+                                <state key="normal" title="Ingresar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -86,15 +79,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsR-Ej-I3Z">
-                                <rect key="frame" x="144" y="608" width="126" height="49"/>
+                                <rect key="frame" x="144" y="621" width="126" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cyan="0.20000000000000001" magenta="0.98999999999999999" yellow="0.85999999999999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sign in">
+                                <state key="normal" title="Registrate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="signUpDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWo-t1-2GG"/>
+                                    <segue destination="D73-j5-XG6" kind="show" id="CkT-cE-xRg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,6 +105,16 @@
             </objects>
             <point key="canvasLocation" x="932" y="88"/>
         </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="KCa-Ul-O2s">
+            <objects>
+                <viewControllerPlaceholder id="D73-j5-XG6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ojd-Wx-Z53"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lat-xq-3Va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="298"/>
+        </scene>
         <!--Main Menu-->
         <scene sceneID="sES-nJ-lUK">
             <objects>
@@ -125,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnW-1W-Sro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701" y="102"/>
+            <point key="canvasLocation" x="1984" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QeG-x3-5GG">

@@ -105,7 +105,7 @@ class LoginViewController: UIViewController
             }
             else
             {
-                print("Error creating user: \(error?.localizedDescription)")
+                print("Error creating user: \(String(describing: error?.localizedDescription))")
             }
         }
     }
