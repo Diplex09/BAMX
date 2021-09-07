@@ -101,14 +101,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="J48-Vl-knE">
-                                <rect key="frame" x="118" y="64" width="178" height="103"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bamx-logo" translatesAutoresizingMaskIntoConstraints="NO" id="J48-Vl-knE">
+                                <rect key="frame" x="118" y="62" width="178" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="0nB-7g-5pR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="nlB-nx-8ED"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Días sin hambre. Futuros más brillantes." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff4-LM-Izk">
-                                <rect key="frame" x="20" y="175" width="374" height="18"/>
+                                <rect key="frame" x="20" y="150" width="374" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -117,12 +117,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ff4-LM-Izk" firstAttribute="top" secondItem="J48-Vl-knE" secondAttribute="bottom" constant="8" id="0iV-yK-F2p"/>
-                            <constraint firstItem="J48-Vl-knE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="9ls-Gn-wQJ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J48-Vl-knE" secondAttribute="trailing" constant="118" id="DBM-1j-k4e"/>
-                            <constraint firstItem="J48-Vl-knE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="118" id="LtW-YZ-dMF"/>
+                            <constraint firstItem="Ff4-LM-Izk" firstAttribute="top" secondItem="J48-Vl-knE" secondAttribute="bottom" constant="8" id="37s-uL-HC3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ff4-LM-Izk" secondAttribute="trailing" constant="20" id="ddF-DN-9ks"/>
                             <constraint firstItem="Ff4-LM-Izk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iZ6-mi-P6z"/>
+                            <constraint firstItem="J48-Vl-knE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="18" id="kuM-qm-ENi"/>
+                            <constraint firstItem="J48-Vl-knE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="118" id="sO0-Nk-a3S"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J48-Vl-knE" secondAttribute="trailing" constant="118" id="xNM-eO-CzE"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -132,8 +132,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppIconImage.png" width="160" height="171"/>
         <image name="background-top" width="4688" height="3546"/>
+        <image name="bamx-logo" width="176" height="68"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
