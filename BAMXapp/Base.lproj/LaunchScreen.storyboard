@@ -16,16 +16,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bamx-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ml4-DD-Eme">
-                                <rect key="frame" x="79" y="382" width="256" height="133"/>
+                                <rect key="frame" x="47" y="346" width="320" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="OMw-73-PmS"/>
+                                    <constraint firstAttribute="height" constant="205" id="re1-M0-Ybm"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.91764706370000004" green="0.24313727020000001" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ml4-DD-Eme" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="338" id="FEW-Sg-fxu"/>
-                            <constraint firstItem="Ml4-DD-Eme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="V3K-qo-eH4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ml4-DD-Eme" secondAttribute="trailing" constant="79" id="ZOd-gY-cqb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ml4-DD-Eme" secondAttribute="bottom" constant="347" id="nCL-JX-X65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ml4-DD-Eme" secondAttribute="trailing" constant="47" id="5f2-Ae-SgL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ml4-DD-Eme" secondAttribute="bottom" constant="311" id="T6s-hz-Fl2"/>
+                            <constraint firstItem="Ml4-DD-Eme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Yk4-bo-QmL"/>
+                            <constraint firstItem="Ml4-DD-Eme" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="302" id="yPs-2v-spW"/>
                         </constraints>
                     </view>
                 </viewController>
