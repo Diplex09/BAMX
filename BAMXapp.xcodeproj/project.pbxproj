@@ -24,6 +24,8 @@
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
 		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
+		BD98E35826E6D7930031D132 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD98E35726E6D7920031D132 /* Donation.storyboard */; };
+		BD98E35A26E711270031D132 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98E35926E711270031D132 /* DonationsViewController.swift */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD98E35726E6D7920031D132 /* Donation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donation.storyboard; sourceTree = "<group>"; };
+		BD98E35926E711270031D132 /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
 				928A48F326E6817B001CD187 /* Introduction.storyboard */,
 				92AD58E526E3EB56002B77D4 /* Signup.storyboard */,
+				BD98E35726E6D7920031D132 /* Donation.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
+				BD98E35926E711270031D132 /* DonationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				928A48F426E6817B001CD187 /* Introduction.storyboard in Resources */,
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
 				92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */,
+				BD98E35826E6D7930031D132 /* Donation.storyboard in Resources */,
 				9299829C26E3E93F008E8285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +383,7 @@
 				9299829926E3E93F008E8285 /* ViewController.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
+				BD98E35A26E711270031D132 /* DonationsViewController.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
