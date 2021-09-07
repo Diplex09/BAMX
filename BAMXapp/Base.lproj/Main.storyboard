@@ -23,7 +23,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Login View Controller" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login View Controller" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +172,7 @@
         <!--Intro View Controller-->
         <scene sceneID="E0w-mV-Pv3">
             <objects>
-                <viewController storyboardIdentifier="Intro" id="LBX-OU-bCx" customClass="IntroViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroViewController" id="LBX-OU-bCx" customClass="IntroViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJn-fa-t0a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

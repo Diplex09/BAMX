@@ -49,6 +49,7 @@ class IntroViewController: UIViewController {
             let controller = storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .coverVertical
+            UserDefaults.standard.hasOnboarded = true
             present(controller, animated: true, completion: nil)
         }
         else {
