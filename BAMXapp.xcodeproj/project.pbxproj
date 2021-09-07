@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */; };
 		92254EAA26E81F180095DE38 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92254EA926E81F180095DE38 /* UserDefaultsExtension.swift */; };
-		1274815726E7086200792F04 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 1274815626E7086200792F04 /* Lato */; };
 		922CAD0A26E3FAF800DB9DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CAD0926E3FAF800DB9DED /* User.swift */; };
 		927DB02A26E6DC70006D6340 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DB02926E6DC70006D6340 /* IntroViewController.swift */; };
 		927DB03926E6E51F006D6340 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 927DB02F26E6E51E006D6340 /* Lato-Italic.ttf */; };
@@ -61,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1274815626E7086200792F04 /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato; path = ../../../../Downloads/Lato; sourceTree = "<group>"; };
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
 		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
 		92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
 				92AD58E526E3EB56002B77D4 /* Signup.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
-				1274815626E7086200792F04 /* Lato */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
 				928A490026E68895001CD187 /* AppIconImage.png */,
@@ -373,8 +370,6 @@
 				929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */,
 				927DB03D26E6E51F006D6340 /* Lato-Black.ttf in Resources */,
 				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
-				928A48F426E6817B001CD187 /* Introduction.storyboard in Resources */,
-				1274815726E7086200792F04 /* Lato in Resources */,
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
 				92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */,
 				927DB03B26E6E51F006D6340 /* Lato-Thin.ttf in Resources */,
