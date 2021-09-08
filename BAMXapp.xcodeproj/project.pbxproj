@@ -32,7 +32,6 @@
 		929982AF26E3E940008E8285 /* BAMXappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982AE26E3E940008E8285 /* BAMXappTests.swift */; };
 		929982BA26E3E940008E8285 /* BAMXappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982B926E3E940008E8285 /* BAMXappUITests.swift */; };
 		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
-		92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58E526E3EB56002B77D4 /* Signup.storyboard */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
 		92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */; };
 		92C0886826E7CFF800C95A41 /* IntroSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886726E7CFF800C95A41 /* IntroSlide.swift */; };
@@ -93,7 +92,6 @@
 		929982B926E3E940008E8285 /* BAMXappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappUITests.swift; sourceTree = "<group>"; };
 		929982BB26E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		92AD58E526E3EB56002B77D4 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		92C0886726E7CFF800C95A41 /* IntroSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSlide.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
-				92AD58E526E3EB56002B77D4 /* Signup.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
@@ -371,7 +368,6 @@
 				927DB03D26E6E51F006D6340 /* Lato-Black.ttf in Resources */,
 				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
-				92AD58E626E3EB56002B77D4 /* Signup.storyboard in Resources */,
 				927DB03B26E6E51F006D6340 /* Lato-Thin.ttf in Resources */,
 				927DB03926E6E51F006D6340 /* Lato-Italic.ttf in Resources */,
 				927DB03F26E6E51F006D6340 /* Lato-Regular.ttf in Resources */,
