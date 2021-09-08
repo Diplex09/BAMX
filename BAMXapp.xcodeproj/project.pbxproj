@@ -38,7 +38,8 @@
 		92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */; };
 		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
-		92E5FF1426E861EF00B5BFD3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E5FF1326E861EF00B5BFD3 /* SignUpViewController.swift */; };
+		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
+		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,7 +100,8 @@
 		92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		92E5FF1326E861EF00B5BFD3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
+		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
+				99F3A3F126E86ACC00D72179 /* Donation.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
@@ -230,7 +233,7 @@
 				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
 				927DB02926E6DC70006D6340 /* IntroViewController.swift */,
 				92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */,
-				92E5FF1326E861EF00B5BFD3 /* SignUpViewController.swift */,
+				99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				927DB04026E6E51F006D6340 /* Lato-LightItalic.ttf in Resources */,
 				928A490126E68895001CD187 /* AppIconImage.png in Resources */,
 				927DB03A26E6E51F006D6340 /* Lato-ThinItalic.ttf in Resources */,
+				99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */,
 				929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */,
 				927DB03D26E6E51F006D6340 /* Lato-Black.ttf in Resources */,
 				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
@@ -451,10 +455,10 @@
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
-				92E5FF1426E861EF00B5BFD3 /* SignUpViewController.swift in Sources */,
 				92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */,
 				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
 				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
+				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,
 				92254EAA26E81F180095DE38 /* UserDefaultsExtension.swift in Sources */,
 				92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
@@ -506,6 +510,14 @@
 				929982A326E3E940008E8285 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		99F3A3F126E86ACC00D72179 /* Donation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99F3A3F226E86ACC00D72179 /* Base */,
+			);
+			name = Donation.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
