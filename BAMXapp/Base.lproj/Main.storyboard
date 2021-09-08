@@ -87,21 +87,8 @@
                                     <segue destination="4cs-gT-MYD" kind="show" identifier="loginToMainMenu" id="Xe0-fk-xxI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsR-Ej-I3Z">
-                                <rect key="frame" x="220" y="813" width="168" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="G7a-69-ZgK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Crea una cuenta">
-                                    <color key="titleColor" systemColor="systemOrangeColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="signUpDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWo-t1-2GG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Eres nuevo usuario?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zac-E2-vtz">
-                                <rect key="frame" x="67" y="819" width="145" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="¿Eres nuevo usuario?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zac-E2-vtz">
+                                <rect key="frame" x="50" y="819" width="145" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,11 +105,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsR-Ej-I3Z">
+                                <rect key="frame" x="203" y="813" width="191" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="G7a-69-ZgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Crea una cuenta">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWo-t1-2GG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QsR-Ej-I3Z" secondAttribute="trailing" constant="26" id="20w-6M-bBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QsR-Ej-I3Z" secondAttribute="trailing" constant="20" id="20w-6M-bBC"/>
+                            <constraint firstItem="QsR-Ej-I3Z" firstAttribute="leading" secondItem="zac-E2-vtz" secondAttribute="trailing" constant="8" id="2dp-u7-vkI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4z-Xe-YvD" secondAttribute="trailing" constant="66" id="4ow-hE-vVo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="616-DZ-RTv" secondAttribute="trailing" constant="66" id="5Qk-GQ-liF"/>
                             <constraint firstItem="qF4-cB-k5P" firstAttribute="top" secondItem="H8F-31-FQg" secondAttribute="bottom" constant="8" id="6iJ-aG-f71"/>
@@ -149,7 +150,7 @@
                             <constraint firstItem="IHS-xt-bnW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gec-sB-OVn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zac-E2-vtz" secondAttribute="bottom" constant="25" id="hFh-by-LJc"/>
                             <constraint firstItem="616-DZ-RTv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="lob-hj-6Rb"/>
-                            <constraint firstItem="zac-E2-vtz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="pEw-mw-9FF"/>
+                            <constraint firstItem="zac-E2-vtz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pEw-mw-9FF"/>
                             <constraint firstItem="an3-vj-a75" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="ptf-1l-gUy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="an3-vj-a75" secondAttribute="trailing" symbolic="YES" id="rBG-pB-5BE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPC-bt-pVP" secondAttribute="trailing" constant="66" id="sbh-qe-cRb"/>
