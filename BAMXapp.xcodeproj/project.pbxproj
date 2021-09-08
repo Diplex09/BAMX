@@ -43,6 +43,7 @@
 		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
 		92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBEE8526E87880008F52CA /* SignUpViewController.swift */; };
+		99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E5365C26E97438004E06C5 /* Profile.storyboard */; };
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
 		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
@@ -110,6 +111,7 @@
 		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		92DBEE8526E87880008F52CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		99E5365C26E97438004E06C5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +249,7 @@
 				99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */,
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
+				99E5365C26E97438004E06C5 /* Profile.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
 				927DB03B26E6E51F006D6340 /* Lato-Thin.ttf in Resources */,
 				927DB03926E6E51F006D6340 /* Lato-Italic.ttf in Resources */,
+				99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */,
 				927DB03F26E6E51F006D6340 /* Lato-Regular.ttf in Resources */,
 				9299829C26E3E93F008E8285 /* Main.storyboard in Resources */,
 				927DB03E26E6E51F006D6340 /* Lato-BoldItalic.ttf in Resources */,
