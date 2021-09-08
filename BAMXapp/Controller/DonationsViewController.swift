@@ -31,6 +31,7 @@ class DonationsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
         
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     

@@ -16,6 +16,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+    }
+    
     //Sign up
     @IBAction func signUpDidTouch(_ sender:
     AnyObject) {

@@ -27,6 +27,7 @@ class LoginViewController: UIViewController
         
         enterEmail.delegate = self
         enterPassword.delegate = self
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,6 +89,12 @@ class LoginViewController: UIViewController
                 
                 alert.addAction(UIAlertAction(title: "OK", style: .default))
                 self.present(alert, animated: true, completion: nil)
+            }
+            else {
+                let u = Auth.auth().currentUser
+                let em = u?.email ?? " "
+                let name = u?.displayName ?? " "
+                print("Ha ingresado: " + name + " email: " + em)
             }
         }
     }

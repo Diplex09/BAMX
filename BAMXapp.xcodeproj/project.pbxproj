@@ -31,6 +31,10 @@
 		929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929982A226E3E940008E8285 /* LaunchScreen.storyboard */; };
 		929982AF26E3E940008E8285 /* BAMXappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982AE26E3E940008E8285 /* BAMXappTests.swift */; };
 		929982BA26E3E940008E8285 /* BAMXappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929982B926E3E940008E8285 /* BAMXappUITests.swift */; };
+		929AD30B26E9092F006A83A7 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */; };
+		929AD31026E9136F006A83A7 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD30F26E9136F006A83A7 /* EventCollectionViewCell.swift */; };
+		929AD31D26E91634006A83A7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD31C26E91634006A83A7 /* Event.swift */; };
+		929AD32226E91696006A83A7 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD32126E91696006A83A7 /* Site.swift */; };
 		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
 		92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */; };
@@ -94,6 +98,10 @@
 		929982B526E3E940008E8285 /* BAMXappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMXappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929982B926E3E940008E8285 /* BAMXappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMXappUITests.swift; sourceTree = "<group>"; };
 		929982BB26E3E940008E8285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		929AD30F26E9136F006A83A7 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		929AD31C26E91634006A83A7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		929AD32126E91696006A83A7 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -232,11 +240,13 @@
 		92AD591826E3F0D8002B77D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				929AD30F26E9136F006A83A7 /* EventCollectionViewCell.swift */,
 				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
 				927DB02926E6DC70006D6340 /* IntroViewController.swift */,
 				92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */,
 				99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */,
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
+				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +258,8 @@
 				92C70AB226E3F61D008290EA /* Item.swift */,
 				922CAD0926E3FAF800DB9DED /* User.swift */,
 				92C0886726E7CFF800C95A41 /* IntroSlide.swift */,
+				929AD31C26E91634006A83A7 /* Event.swift */,
+				929AD32126E91696006A83A7 /* Site.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,12 +467,16 @@
 				92C0886826E7CFF800C95A41 /* IntroSlide.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
+				929AD32226E91696006A83A7 /* Site.swift in Sources */,
+				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
 				92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */,
 				92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */,
+				929AD30B26E9092F006A83A7 /* MainMenuViewController.swift in Sources */,
 				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
+				929AD31026E9136F006A83A7 /* EventCollectionViewCell.swift in Sources */,
 				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
 				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,
 				92254EAA26E81F180095DE38 /* UserDefaultsExtension.swift in Sources */,
