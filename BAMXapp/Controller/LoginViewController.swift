@@ -14,6 +14,7 @@ class LoginViewController: UIViewController
     
     @IBOutlet weak var enterEmail: UITextField!
     @IBOutlet weak var enterPassword: UITextField!
+    @IBOutlet weak var createUser: UIButton!
     
     var handle: AuthStateDidChangeListenerHandle?
     
@@ -38,7 +39,7 @@ class LoginViewController: UIViewController
             }
             else
             {
-                self.performSegue(withIdentifier: self.loginToMainMenu, sender: nil)
+                //self.performSegue(withIdentifier: self.loginToMainMenu, sender: nil)
                 self.enterEmail.text = nil
                 self.enterPassword.text = nil
             }
@@ -55,6 +56,11 @@ class LoginViewController: UIViewController
         guard let handle = handle else{return }
         
         Auth.auth().removeStateDidChangeListener(handle)
+    }
+    
+    //Move to Sign Up
+    @IBAction func createUserDidTouch(_ sender: Any) {
+        performSegue(withIdentifier: "loginToSignup", sender: nil)
     }
     
     //Login
@@ -74,7 +80,7 @@ class LoginViewController: UIViewController
         Auth.auth().signIn(withEmail: email, password: password){ user, error in
             if let error = error, user == nil {
                 let alert = UIAlertController(
-                    title: "Sign infailed :(",
+                    title: "Sign in failed :(",
                     message: error.localizedDescription,
                     preferredStyle: .alert
                 )
@@ -85,30 +91,6 @@ class LoginViewController: UIViewController
         }
     }
     
-    //Sign up
-    @IBAction func signUpDidTouch(_ sender:
-    AnyObject) {
-        // Register user
-        guard
-            let email = enterEmail.text,
-            let password = enterPassword.text,
-            !email.isEmpty,
-            !password.isEmpty
-        else {
-            return
-        }
-        
-        // Sign up code
-        Auth.auth().createUser(withEmail: email, password: password) { _, error in
-            if error == nil {
-                Auth.auth().signIn(withEmail: email, password: password)
-            }
-            else
-            {
-                print("Error creating user: \(String(describing: error?.localizedDescription))")
-            }
-        }
-    }
 }
 
 extension LoginViewController: UITextFieldDelegate{
