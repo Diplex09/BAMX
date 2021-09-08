@@ -90,6 +90,9 @@
                                 <state key="normal" title="Seguir &gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1nW-BC-ie5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -105,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="8.6956521739130448" y="56.919642857142854"/>
         </scene>
-        <!--View Controller-->
+        <!--Money Choice View Controller-->
         <scene sceneID="bk0-Yr-V6d">
             <objects>
-                <viewController id="ha4-74-eFm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="money_donation" id="ha4-74-eFm" customClass="MoneyChoiceViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k3D-hf-ksK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSw-2l-kal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="57"/>
+            <point key="canvasLocation" x="1283" y="601"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xcx-ek-MMg">
@@ -328,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLI-7B-2iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982.608695652174" y="56.919642857142854"/>
+            <point key="canvasLocation" x="3212" y="1130"/>
         </scene>
     </scenes>
     <resources>

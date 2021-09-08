@@ -46,6 +46,7 @@
 		99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E5365C26E97438004E06C5 /* Profile.storyboard */; };
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
 		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
+		BD8B81E026E973DB0071E9FC /* MoneyChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyChoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				927DB02926E6DC70006D6340 /* IntroViewController.swift */,
 				92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */,
 				99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */,
+				BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */,
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
 				99E5365C26E97438004E06C5 /* Profile.storyboard */,
@@ -468,6 +471,7 @@
 				92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */,
 				927DB02A26E6DC70006D6340 /* IntroViewController.swift in Sources */,
 				9299829926E3E93F008E8285 /* ViewController.swift in Sources */,
+				BD8B81E026E973DB0071E9FC /* MoneyChoiceViewController.swift in Sources */,
 				92C0886826E7CFF800C95A41 /* IntroSlide.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
