@@ -575,6 +575,21 @@
             </objects>
             <point key="canvasLocation" x="1840.5797101449277" y="809.59821428571422"/>
         </scene>
+        <!--Rewards-->
+        <scene sceneID="afs-hE-iAG">
+            <objects>
+                <viewController title="Rewards" id="uC5-56-vnk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z1t-aw-Ibc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Zd-uF-z5w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWE-Mj-EZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2893" y="830"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background-top" width="4688" height="3546"/>
