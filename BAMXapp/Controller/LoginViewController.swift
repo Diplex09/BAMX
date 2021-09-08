@@ -60,7 +60,8 @@ class LoginViewController: UIViewController
     
     //Move to Sign Up
     @IBAction func createUserDidTouch(_ sender: Any) {
-        performSegue(withIdentifier: "loginToSignup", sender: nil)
+        let signupView = (storyboard?.instantiateViewController(identifier: "signup"))!
+        present(signupView, animated: true, completion: nil)
     }
     
     //Login
@@ -80,7 +81,7 @@ class LoginViewController: UIViewController
         Auth.auth().signIn(withEmail: email, password: password){ user, error in
             if let error = error, user == nil {
                 let alert = UIAlertController(
-                    title: "Sign in failed :(",
+                    title: "Error al iniciar sesión :(",
                     message: error.localizedDescription,
                     preferredStyle: .alert
                 )

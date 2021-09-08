@@ -16,10 +16,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     
-    @IBAction func goBackDidTouch(_ sender: Any) {
-        transitionToLogin()
-    }
-    
     //Sign up
     @IBAction func signUpDidTouch(_ sender:
     AnyObject) {
@@ -34,7 +30,8 @@ class SignUpViewController: UIViewController {
             !lastName.isEmpty,
             !email.isEmpty,
             !password.isEmpty,
-            !confirm.isEmpty
+            !confirm.isEmpty,
+            password == confirm
         else {
             return
         }
@@ -70,14 +67,6 @@ class SignUpViewController: UIViewController {
                 print("Error creating user: \(String(describing: error?.localizedDescription))")
             }
         }
-    }
-    
-    func transitionToLogin() {
-        //move to login
-        let controller = storyboard?.instantiateViewController(identifier: "LoginViewController")
-        controller?.modalPresentationStyle = .fullScreen
-        controller?.modalTransitionStyle = .coverVertical
-        present(controller!, animated: true, completion: nil)
     }
 
 }
