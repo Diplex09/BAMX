@@ -6,5 +6,6 @@ target 'BAMXapp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
+  pod 'CardSlider'
   use_frameworks!
 end

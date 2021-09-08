@@ -44,6 +44,7 @@
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
 		92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBEE8526E87880008F52CA /* SignUpViewController.swift */; };
 		99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E5365C26E97438004E06C5 /* Profile.storyboard */; };
+		99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E5365E26E977B2004E06C5 /* ProfileViewController.swift */; };
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
 		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
@@ -112,6 +113,7 @@
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		92DBEE8526E87880008F52CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		99E5365C26E97438004E06C5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		99E5365E26E977B2004E06C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +212,7 @@
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
+				99E5365C26E97438004E06C5 /* Profile.storyboard */,
 				99F3A3F126E86ACC00D72179 /* Donation.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
@@ -249,7 +252,7 @@
 				99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */,
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
-				99E5365C26E97438004E06C5 /* Profile.storyboard */,
+				99E5365E26E977B2004E06C5 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				929AD31026E9136F006A83A7 /* EventCollectionViewCell.swift in Sources */,
 				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
 				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,
+				99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */,
 				92254EAA26E81F180095DE38 /* UserDefaultsExtension.swift in Sources */,
 				92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
