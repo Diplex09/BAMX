@@ -5,7 +5,7 @@
 //  Created by Mar Mendoza on 06/09/21.
 //
 
-// ViewControllerDonations
+// ViewControllerDonation
 import UIKit
 
 class CellClass: UIViewController{
