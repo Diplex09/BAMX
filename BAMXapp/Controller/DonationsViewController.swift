@@ -85,6 +85,11 @@ class DonationsViewController: UIViewController {
     @IBAction func onClickEvent(_ sender: Any) {
     }
     
+    @IBAction func didTapButton(){
+        let moneyChoice = storyboard?.instantiateViewController(identifier: "money_donation") as! MoneyChoiceViewController
+        present(moneyChoice, animated: true)
+    }
+    
     
 }
 
@@ -107,4 +112,6 @@ extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
         removeTransparentView()
     }
 }
+
+
 
