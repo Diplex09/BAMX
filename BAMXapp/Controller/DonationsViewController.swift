@@ -31,6 +31,7 @@ class DonationsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
         
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     
@@ -84,6 +85,11 @@ class DonationsViewController: UIViewController {
     @IBAction func onClickEvent(_ sender: Any) {
     }
     
+    @IBAction func didTapButton(){
+        let moneyChoice = storyboard?.instantiateViewController(identifier: "money_donation") as! MoneyChoiceViewController
+        present(moneyChoice, animated: true)
+    }
+    
     
 }
 
@@ -106,4 +112,6 @@ extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
         removeTransparentView()
     }
 }
+
+
 
