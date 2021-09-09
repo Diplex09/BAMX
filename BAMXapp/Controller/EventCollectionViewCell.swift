@@ -12,7 +12,6 @@ class EventCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageViewCell: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
-    @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var donatorsLbl: UILabel!
     
     var event: Event! {
