@@ -898,7 +898,7 @@
         <!--Rewards-->
         <scene sceneID="afs-hE-iAG">
             <objects>
-                <viewController title="Rewards" id="uC5-56-vnk" sceneMemberID="viewController">
+                <viewController title="Rewards" id="uC5-56-vnk" customClass="RewardsViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z1t-aw-Ibc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -984,6 +984,9 @@
                             <constraint firstItem="6Zd-uF-z5w" firstAttribute="trailing" secondItem="PW6-jV-WNa" secondAttribute="trailing" constant="52" id="svb-2I-Jjs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SpecialReward" destination="MUb-Lz-hr7" id="Bmf-e6-MQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWE-Mj-EZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
