@@ -39,6 +39,10 @@
 		929AD32226E91696006A83A7 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AD32126E91696006A83A7 /* Site.swift */; };
 		92A1C1A426EBA5A000D41DBF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A1C1A326EBA5A000D41DBF /* Profile.storyboard */; };
 		92A1C1AC26EBA5CF00D41DBF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A1C1AB26EBA5CF00D41DBF /* Colors.xcassets */; };
+		92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */; };
+		92A1C1B626EBB03600D41DBF /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */; };
+		92A1C1BC26EBB05E00D41DBF /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */; };
+		92A1C1BD26EBB05E00D41DBF /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1BB26EBB05E00D41DBF /* EventCollectionViewCell.swift */; };
 		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
 		92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */; };
@@ -113,6 +117,10 @@
 		929AD32126E91696006A83A7 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 		92A1C1A326EBA5A000D41DBF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		92A1C1AB26EBA5CF00D41DBF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
+		92A1C1BB26EBB05E00D41DBF /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCollectionViewCell.swift; path = "../../../../Downloads/BAMX-LastMainMenuComit/BAMXapp/Controller/EventCollectionViewCell.swift"; sourceTree = "<group>"; };
 		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -256,6 +264,10 @@
 		92AD591826E3F0D8002B77D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92A1C1BB26EBB05E00D41DBF /* EventCollectionViewCell.swift */,
+				92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */,
+				92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */,
+				92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */,
 				929AD30F26E9136F006A83A7 /* EventCollectionViewCell.swift */,
 				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
 				927DB02926E6DC70006D6340 /* IntroViewController.swift */,
@@ -494,7 +506,9 @@
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				929AD32226E91696006A83A7 /* Site.swift in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
+				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
 				99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */,
+				92A1C1BD26EBB05E00D41DBF /* EventCollectionViewCell.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
@@ -502,10 +516,12 @@
 				92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */,
 				92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */,
 				929AD30B26E9092F006A83A7 /* MainMenuViewController.swift in Sources */,
+				92A1C1BC26EBB05E00D41DBF /* EventCollectionViewController.swift in Sources */,
 				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
 				929AD31026E9136F006A83A7 /* EventCollectionViewCell.swift in Sources */,
 				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
 				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,
+				92A1C1B626EBB03600D41DBF /* CustomTabBarViewController.swift in Sources */,
 				99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */,
 				92254EAA26E81F180095DE38 /* UserDefaultsExtension.swift in Sources */,
 				92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -567,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -620,6 +637,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -628,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -674,6 +693,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
