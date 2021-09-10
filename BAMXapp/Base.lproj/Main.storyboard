@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBX-OU-bCx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBX-OU-bCx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -338,7 +338,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JxT-3k-eMN">
-                                <rect key="frame" x="146" y="629.5" width="122.5" height="27.5"/>
+                                <rect key="frame" x="146.5" y="629.5" width="121.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGray3Color"/>
                                 <color key="currentPageIndicatorTintColor" red="0.99675506349999998" green="0.1461859345" blue="0.28614670040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -488,7 +488,7 @@
                                 <rect key="frame" x="0.0" y="366" width="414" height="418"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-kl-9OQ">
-                                        <rect key="frame" x="17" y="20" width="90.5" height="26"/>
+                                        <rect key="frame" x="17" y="20" width="89" height="26"/>
                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -607,7 +607,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="N6V-PO-gXY" firstAttribute="leading" secondItem="Zkg-aT-BPc" secondAttribute="leading" constant="4" id="1ow-ak-A9t"/>
                                     <constraint firstItem="9dw-QW-IXu" firstAttribute="leading" secondItem="f1x-P2-KKP" secondAttribute="trailing" constant="78" id="3De-tK-KXn"/>
@@ -673,11 +673,11 @@
             </objects>
             <point key="canvasLocation" x="4306" y="-443"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="yAa-1f-puM">
             <objects>
-                <tabBarController id="Li1-tx-KQS" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sai-fg-UgM">
+                <tabBarController id="Li1-tx-KQS" customClass="CustomTabBarViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sai-fg-UgM" customClass="TabBarViewController" customModule="BAMXapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1312,11 +1312,11 @@
             </objects>
             <point key="canvasLocation" x="4250" y="1638"/>
         </scene>
-        <!--Donar-->
+        <!--Navigation Controller-->
         <scene sceneID="dOB-HA-pci">
             <objects>
                 <navigationController id="1FR-ib-5Ee" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Donar" image="heart.fill" catalog="system" id="w9b-OM-1J8"/>
+                    <tabBarItem key="tabBarItem" title="" id="w9b-OM-1J8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X8a-h4-dm8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1351,12 +1351,11 @@
         <image name="bamx-logo" width="176" height="68"/>
         <image name="eventPlaceholder" width="375" height="235"/>
         <image name="gray-rectangle" width="640" height="640"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="home-icon" width="27" height="27"/>
         <image name="icon-facebook" width="50" height="50"/>
         <image name="icon-google" width="50" height="50"/>
         <image name="notification-icon" width="24" height="26"/>
-        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="play" catalog="system" width="32" height="32"/>
         <image name="profile-icon" width="20" height="26"/>
         <image name="reward-icon" width="27" height="28"/>
         <systemColor name="labelColor">

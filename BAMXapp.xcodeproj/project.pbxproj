@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */; };
+		665445DB26EC00BE00460F7E /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665445DA26EC00BE00460F7E /* UserDefaultsExtension.swift */; };
 		9202AADF26EB9F8A00B3A98C /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9202AADE26EB9F8A00B3A98C /* Donation.storyboard */; };
 		92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */; };
 		922CAD0A26E3FAF800DB9DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CAD0926E3FAF800DB9DED /* User.swift */; };
@@ -43,7 +44,6 @@
 		92A1C1BC26EBB05E00D41DBF /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */; };
 		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
-		92B3633A26EBB505002D6899 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3633926EBB505002D6899 /* UserDefaultsExtension.swift */; };
 		92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */; };
 		92C0886826E7CFF800C95A41 /* IntroSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886726E7CFF800C95A41 /* IntroSlide.swift */; };
 		92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */; };
@@ -79,6 +79,7 @@
 		12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
 		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
+		665445DA26EC00BE00460F7E /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = ../../../../Downloads/UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		9202AADE26EB9F8A00B3A98C /* Donation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Donation.storyboard; sourceTree = "<group>"; };
 		92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		922CAD0926E3FAF800DB9DED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
 		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		92B3633926EBB505002D6899 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = "../../../../Downloads/BAMX-LastMainMenuComit/BAMXapp/Extensions/UserDefaultsExtension.swift"; sourceTree = "<group>"; };
 		92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		92C0886726E7CFF800C95A41 /* IntroSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSlide.swift; sourceTree = "<group>"; };
 		92C0886C26E7D26300C95A41 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -297,7 +297,7 @@
 		92C0886126E7CE8000C95A41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				92B3633926EBB505002D6899 /* UserDefaultsExtension.swift */,
+				665445DA26EC00BE00460F7E /* UserDefaultsExtension.swift */,
 				92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */,
 				92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */,
 			);
@@ -503,7 +503,6 @@
 				12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
-				92B3633A26EBB505002D6899 /* UserDefaultsExtension.swift in Sources */,
 				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
 				99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
@@ -520,6 +519,7 @@
 				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,
 				92A1C1B626EBB03600D41DBF /* CustomTabBarViewController.swift in Sources */,
 				99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */,
+				665445DB26EC00BE00460F7E /* UserDefaultsExtension.swift in Sources */,
 				92C0886D26E7D26300C95A41 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
