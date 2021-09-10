@@ -278,16 +278,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pnT-hN-EiZ">
-                                                    <rect key="frame" x="16" y="406.5" width="381" height="81.5"/>
+                                                    <rect key="frame" x="16" y="405" width="381" height="83.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2v-Xa-lsg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="381" height="42"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
                                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
                                                             <color key="textColor" red="0.99675506349999998" green="0.1461859345" blue="0.28614670040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-Yr-pCa">
-                                                            <rect key="frame" x="0.0" y="58" width="381" height="23.5"/>
+                                                            <rect key="frame" x="0.0" y="59.5" width="381" height="24"/>
                                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -295,7 +295,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v44-R4-VcI">
-                                                    <rect key="frame" x="78" y="82" width="257" height="257.5"/>
+                                                    <rect key="frame" x="78" y="82" width="257" height="256"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -484,17 +484,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp4-5N-reM">
-                                <rect key="frame" x="33" y="91" width="65" height="22"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-aT-BPc">
                                 <rect key="frame" x="0.0" y="366" width="414" height="418"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-kl-9OQ">
-                                        <rect key="frame" x="17" y="20" width="89" height="26"/>
+                                        <rect key="frame" x="17" y="20" width="90.5" height="26"/>
                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -621,19 +615,17 @@
                                     <constraint firstItem="osg-8r-Jmz" firstAttribute="top" secondItem="hA3-Sf-5N7" secondAttribute="bottom" constant="25" id="6fp-gY-aPK"/>
                                     <constraint firstItem="Cub-Wi-5uc" firstAttribute="top" secondItem="9dw-QW-IXu" secondAttribute="bottom" constant="8" symbolic="YES" id="89p-wJ-R2Q"/>
                                     <constraint firstItem="3yj-kD-cQm" firstAttribute="top" secondItem="YYo-K1-m42" secondAttribute="bottom" constant="26" id="9Dt-2F-zZr"/>
-                                    <constraint firstAttribute="height" constant="418" id="CeE-Q3-WPZ"/>
                                     <constraint firstItem="2yf-ri-wkU" firstAttribute="top" secondItem="Zkg-aT-BPc" secondAttribute="top" constant="68" id="DDP-aO-QLh"/>
                                     <constraint firstItem="N6V-PO-gXY" firstAttribute="top" secondItem="3yj-kD-cQm" secondAttribute="bottom" constant="-3" id="Di7-Y4-EVC"/>
                                     <constraint firstItem="qxa-h3-aTr" firstAttribute="leading" secondItem="3yj-kD-cQm" secondAttribute="trailing" constant="82" id="DzF-Vu-rAD"/>
-                                    <constraint firstAttribute="trailing" secondItem="GgJ-kl-9OQ" secondAttribute="trailing" constant="308" id="Fw3-Ad-2yN"/>
                                     <constraint firstItem="GgJ-kl-9OQ" firstAttribute="top" secondItem="Zkg-aT-BPc" secondAttribute="top" constant="20" symbolic="YES" id="GKY-At-RLo"/>
                                     <constraint firstItem="uFf-iG-She" firstAttribute="top" secondItem="qxa-h3-aTr" secondAttribute="bottom" constant="8" symbolic="YES" id="KQj-mY-aBa"/>
                                     <constraint firstItem="sn5-V7-MKL" firstAttribute="leading" secondItem="uFf-iG-She" secondAttribute="trailing" constant="18" id="OuI-3a-xKj"/>
                                     <constraint firstItem="YYo-K1-m42" firstAttribute="leading" secondItem="Zkg-aT-BPc" secondAttribute="leading" constant="8" id="UvE-4Y-Syw"/>
                                     <constraint firstItem="sn5-V7-MKL" firstAttribute="top" secondItem="osg-8r-Jmz" secondAttribute="bottom" constant="-3" id="ZTN-pI-1uq"/>
+                                    <constraint firstItem="GgJ-kl-9OQ" firstAttribute="leading" secondItem="Zkg-aT-BPc" secondAttribute="leading" constant="17" id="ahm-Xk-YVY"/>
                                     <constraint firstItem="Cub-Wi-5uc" firstAttribute="leading" secondItem="YYo-K1-m42" secondAttribute="trailing" constant="27" id="f60-Q3-b6s"/>
                                     <constraint firstItem="2yf-ri-wkU" firstAttribute="leading" secondItem="9dw-QW-IXu" secondAttribute="trailing" constant="69" id="iG4-Kc-dWb"/>
-                                    <constraint firstAttribute="width" constant="414" id="jTb-lH-55e"/>
                                     <constraint firstItem="9dw-QW-IXu" firstAttribute="top" secondItem="Zkg-aT-BPc" secondAttribute="top" constant="68" id="nAU-QN-Kzh"/>
                                     <constraint firstItem="osg-8r-Jmz" firstAttribute="leading" secondItem="qxa-h3-aTr" secondAttribute="trailing" constant="69" id="njM-r9-Cn4"/>
                                     <constraint firstItem="3yj-kD-cQm" firstAttribute="leading" secondItem="Zkg-aT-BPc" secondAttribute="leading" constant="29" id="pja-ov-xnZ"/>
@@ -646,32 +638,40 @@
                                     <constraint firstItem="hA3-Sf-5N7" firstAttribute="leading" secondItem="Cub-Wi-5uc" secondAttribute="trailing" constant="18" id="wfE-VS-cdl"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp4-5N-reM">
+                                <rect key="frame" x="33" y="100" width="65" height="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y75-Ne-aYN"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Pp4-5N-reM" firstAttribute="top" secondItem="oZl-3l-Px7" secondAttribute="bottom" constant="8" symbolic="YES" id="0mh-Uc-qS4"/>
                             <constraint firstItem="Zkg-aT-BPc" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" id="6pW-Wa-gMB"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="trailing" secondItem="oZl-3l-Px7" secondAttribute="trailing" constant="20" id="8L7-Xa-QUZ"/>
                             <constraint firstItem="Zkg-aT-BPc" firstAttribute="top" secondItem="Y75-Ne-aYN" secondAttribute="top" constant="322" id="A35-G4-hLL"/>
-                            <constraint firstItem="Pp4-5N-reM" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="HIc-X5-uWk"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="bottom" secondItem="x6E-ZA-5Sh" secondAttribute="bottom" constant="455" id="Hll-aY-tYo"/>
+                            <constraint firstItem="oZl-3l-Px7" firstAttribute="top" secondItem="Y75-Ne-aYN" secondAttribute="top" constant="4" id="TQI-gx-L3U"/>
                             <constraint firstItem="Zkg-aT-BPc" firstAttribute="top" secondItem="x6E-ZA-5Sh" secondAttribute="bottom" constant="8" symbolic="YES" id="TgN-Ft-VhJ"/>
+                            <constraint firstItem="x6E-ZA-5Sh" firstAttribute="top" secondItem="Pp4-5N-reM" secondAttribute="bottom" constant="18" id="dbr-sc-WTs"/>
+                            <constraint firstItem="oZl-3l-Px7" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="ec8-5Z-LAz"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="bottom" secondItem="Zkg-aT-BPc" secondAttribute="bottom" constant="29" id="f7p-qF-kyt"/>
-                            <constraint firstItem="x6E-ZA-5Sh" firstAttribute="top" secondItem="Pp4-5N-reM" secondAttribute="bottom" constant="27" id="fCj-Ox-GUB"/>
+                            <constraint firstItem="Pp4-5N-reM" firstAttribute="top" secondItem="oZl-3l-Px7" secondAttribute="bottom" constant="17" id="hnE-n4-gsj"/>
                             <constraint firstItem="x6E-ZA-5Sh" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="n5a-eD-6gl"/>
+                            <constraint firstItem="Pp4-5N-reM" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="sLT-Uz-AwT"/>
+                            <constraint firstItem="Y75-Ne-aYN" firstAttribute="trailing" secondItem="Zkg-aT-BPc" secondAttribute="trailing" id="xtc-3O-fYY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qSy-Gm-iYj"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="eventCollectionView" destination="x6E-ZA-5Sh" id="DRN-Zb-Uct"/>
                         <outlet property="greetLbl" destination="oZl-3l-Px7" id="cPK-Zd-SyJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnW-1W-Sro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4250.7246376811599" y="-212.27678571428569"/>
+            <point key="canvasLocation" x="4306" y="-443"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yAa-1f-puM">
@@ -683,9 +683,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tZt-gE-TOn" kind="relationship" relationship="viewControllers" id="a75-ih-C6j"/>
-                        <segue destination="yhH-oT-Slc" kind="relationship" relationship="viewControllers" id="dcN-Cy-97q"/>
-                        <segue destination="Snd-X2-88N" kind="relationship" relationship="viewControllers" id="pVb-rM-UQx"/>
+                        <segue destination="tZt-gE-TOn" kind="relationship" relationship="viewControllers" id="T65-1A-jTi"/>
+                        <segue destination="Snd-X2-88N" kind="relationship" relationship="viewControllers" id="Ene-d3-yJ0"/>
+                        <segue destination="1FR-ib-5Ee" kind="relationship" relationship="viewControllers" id="KBn-IX-GDw"/>
+                        <segue destination="Qos-Yh-O5P" kind="relationship" relationship="viewControllers" id="01c-lN-APZ"/>
+                        <segue destination="yhH-oT-Slc" kind="relationship" relationship="viewControllers" id="dcM-h6-AC0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGf-9q-cdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -707,7 +709,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aro-o5-fjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3441" y="-211"/>
+            <point key="canvasLocation" x="3496" y="-442"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zf9-cS-Kqf">
@@ -1142,7 +1144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6s-v8-eZ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4251" y="441"/>
+            <point key="canvasLocation" x="4338" y="2335"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="afs-hE-iAG">
@@ -1153,31 +1155,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recompensas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-zF-QYP">
-                                <rect key="frame" x="52" y="129" width="310" height="41"/>
+                                <rect key="frame" x="52" y="129" width="310" height="42"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Especial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoC-0Z-KQb">
-                                <rect key="frame" x="52" y="190" width="74" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Especial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoC-0Z-KQb">
+                                <rect key="frame" x="52" y="191" width="74" height="24"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW6-jV-WNa">
-                                <rect key="frame" x="52" y="417" width="310" height="24"/>
+                                <rect key="frame" x="52" y="418" width="310" height="24"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ORO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NQ-jM-plx">
-                                <rect key="frame" x="131" y="190" width="45" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NQ-jM-plx">
+                                <rect key="frame" x="131" y="191" width="45" height="24"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-yo-Yeb">
-                                <rect key="frame" x="52" y="449" width="310" height="310"/>
+                                <rect key="frame" x="52" y="450" width="310" height="310"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="JDh-3a-qZC"/>
@@ -1200,7 +1202,7 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-Lz-hr7">
-                                <rect key="frame" x="52" y="222" width="310" height="175"/>
+                                <rect key="frame" x="52" y="223" width="310" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="5mR-5I-hOY"/>
                                 </constraints>
@@ -1241,7 +1243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWE-Mj-EZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4251" y="1134"/>
+            <point key="canvasLocation" x="4338" y="265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d9K-Hg-Cxc">
@@ -1258,7 +1260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWS-3a-Ufb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3452" y="446"/>
+            <point key="canvasLocation" x="3538" y="2341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xzx-Hc-Rbo">
@@ -1275,7 +1277,67 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLU-e2-ftb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3451" y="1134"/>
+            <point key="canvasLocation" x="3538" y="265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IuK-ue-8aq">
+            <objects>
+                <navigationController id="Qos-Yh-O5P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="notification-icon" id="Vu3-cn-vQM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UFO-xO-jVh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IOQ-tr-4TJ" kind="relationship" relationship="rootViewController" id="A4s-Nm-9kN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdR-lv-mQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3538" y="1633"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a3J-rd-yg8">
+            <objects>
+                <viewController id="IOQ-tr-4TJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fx8-Sd-EDo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fw6-Oz-iUe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vgL-5f-L7L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSg-wn-C8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4250" y="1638"/>
+        </scene>
+        <!--Donar-->
+        <scene sceneID="dOB-HA-pci">
+            <objects>
+                <navigationController id="1FR-ib-5Ee" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donar" image="heart.fill" catalog="system" id="w9b-OM-1J8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X8a-h4-dm8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nCk-YA-MiX" kind="relationship" relationship="rootViewController" id="8rh-OI-Hfx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gc6-qM-3o3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3538" y="960"/>
+        </scene>
+        <!--Donation-->
+        <scene sceneID="3pb-n5-Mnb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Donation" id="nCk-YA-MiX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A4P-PA-pai"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bb-6J-4qg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4386" y="892"/>
         </scene>
     </scenes>
     <resources>
@@ -1289,9 +1351,11 @@
         <image name="bamx-logo" width="176" height="68"/>
         <image name="eventPlaceholder" width="375" height="235"/>
         <image name="gray-rectangle" width="640" height="640"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="home-icon" width="27" height="27"/>
         <image name="icon-facebook" width="50" height="50"/>
         <image name="icon-google" width="50" height="50"/>
+        <image name="notification-icon" width="24" height="26"/>
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="profile-icon" width="20" height="26"/>
         <image name="reward-icon" width="27" height="28"/>
