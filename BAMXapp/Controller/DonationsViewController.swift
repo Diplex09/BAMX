@@ -8,21 +8,23 @@
 // ViewControllerDonation
 import UIKit
 
-class CellClass: UIViewController{
+class CellClass: UITableViewCell{
     
 }
 
 class DonationsViewController: UIViewController {
     
     @IBOutlet var btnDonationType: UIButton!
-    @IBOutlet var btnDonatorType: UIButton!
-    @IBOutlet var btnEvent: UIButton!
+    @IBOutlet weak var btnDonatorType: UIButton!
+    @IBOutlet var btnEventType: UIButton!
     
-    let transparentview = UIView()
+
+    let transparentView = UIView()
     let tableView = UITableView()
     
     var currentBtn = UIButton()
-    var dataSource = [String()]
+    
+    var dataSource = [String]()
     
     
     override func viewDidLoad() {
@@ -31,33 +33,29 @@ class DonationsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
         
-        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     
-    func transparentView(frames: CGRect){
-        let window = UIApplication.shared.keyWindow
-        transparentview.frame = window?.frame ?? self.view.frame
-        self.view.addSubview(transparentview)
+    func addTransparentView(frames: CGRect){
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        transparentView.frame = window?.frame ?? self.view.frame
+        self.view.addSubview(transparentView)
         
-        tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y +
-            frames.height,width: frames.width, height: 0)
+        tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height, width: frames.width, height: 0)
         self.view.addSubview(tableView)
         tableView.layer.cornerRadius = 5
         
         
-        transparentview.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+        transparentView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
         tableView.reloadData()
         
-        let tapGesture = UIGestureRecognizer(target: self, action: #selector(removeTransparentView))
-        
-        transparentview.addGestureRecognizer(tapGesture)
-        transparentview.alpha = 0
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(removeTransparentView))
+        transparentView.addGestureRecognizer(tapGesture)
+        transparentView.alpha = 0
         
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
-            self.transparentview.alpha = 0.5
-            self.tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y +
-                frames.height,width: frames.width, height: 200)
+            self.transparentView.alpha = 0.5
+            self.tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + 5,width: frames.width, height: CGFloat(self.dataSource.count * 50))
         }, completion: nil)
     }
     
@@ -65,32 +63,38 @@ class DonationsViewController: UIViewController {
     @objc func removeTransparentView(){
         let frames = currentBtn.frame
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
-            self.transparentview.alpha = 0
+            self.transparentView.alpha = 0
             self.tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y +
-            frames.height,width: frames.width, height: CGFloat(self.dataSource.count * 50))
+            frames.height,width: frames.width, height: 0)
         }, completion: nil)
-        
     }
+    
     
     
     @IBAction func onClickDonation(_ sender: Any) {
-        dataSource = ["Efectivo", "Alimentos"]
+        dataSource = ["Efectivo", "Despensa"]
         currentBtn = btnDonationType
-        transparentView(frames: btnDonationType.frame)
+        addTransparentView(frames: btnDonationType.frame)
     }
     
     @IBAction func onClickDonator(_ sender: Any) {
+        dataSource = ["Normal", "Padrino"]
+        currentBtn = btnDonatorType
+        addTransparentView(frames: btnDonatorType.frame)
     }
     
+    
     @IBAction func onClickEvent(_ sender: Any) {
+        dataSource = ["Event 1", "Event 2", "Event 3"]
+        currentBtn = btnEventType
+        addTransparentView(frames: btnDonatorType.frame)
     }
+    
     
     @IBAction func didTapButton(){
         let moneyChoice = storyboard?.instantiateViewController(identifier: "money_donation") as! MoneyChoiceViewController
         present(moneyChoice, animated: true)
     }
-    
-    
 }
 
 extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -98,12 +102,15 @@ extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
         return dataSource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = dataSource[indexPath.row]
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+        {
         return 50
     }
     
@@ -112,6 +119,5 @@ extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
         removeTransparentView()
     }
 }
-
 
 
