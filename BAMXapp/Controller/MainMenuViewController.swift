@@ -14,21 +14,8 @@ class MainMenuViewController: UIViewController {
     var email = ""
     var name = ""
     
+    @IBOutlet weak var eventCollectionView: UICollectionView!
     @IBOutlet weak var greetLbl: UILabel!
-    
-    let eventList = "cellToEventCard"
-    let reference = Database.database().reference()
-    var referenceObservers: [DatabaseHandle] = []
-    
-    let usersReference = Database.database().reference(withPath: "online") //logged in users
-    
-    let storage = Storage.storage()
-    // Properties
-    var events: [Event] = []
-    var user: User?
-    var onlineUserCount =  UIBarButtonItem()
-    var handle: AuthStateDidChangeListenerHandle?
-    let reuseIdentifier = "eventCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,32 +23,6 @@ class MainMenuViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
-        handle = Auth.auth().addStateDidChangeListener({ (_, user) in
-            if user == nil {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
-        })
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        guard let handle = handle else { return }
-        
-        Auth.auth().removeStateDidChangeListener(handle)
     }
     
     func getUserProfile(){
@@ -74,9 +35,20 @@ class MainMenuViewController: UIViewController {
             email = user?.email ?? " "
             name = user?.displayName ?? " "
         }
-        let delimiter = " "
-        let shortName = name.components(separatedBy: delimiter)
-        print(shortName[0])
+        var delimiter = " "
+        var shortName = name.components(separatedBy: delimiter)
         greetLbl.text = "Hola " + shortName[0]
     }
 }
+
+/*extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
+}*/

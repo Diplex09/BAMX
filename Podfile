@@ -7,7 +7,5 @@ target 'BAMXapp' do
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'CardSlider'
-  pod 'Firebase/Storage'
-  pod 'FirebaseUI/Storage'
   use_frameworks!
 end

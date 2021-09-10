@@ -2,17 +2,17 @@
 //  Site.swift
 //  BAMXapp
 //
-//  Created by user195828 on 9/9/21.
+//  Created by user195828 on 9/8/21.
 //
 
 import Foundation
 
-struct Site: Codable{
-    var latitude: Double
+struct Site {
     var longitude: Double
+    var latitude: Double
     
-    init(latitude: Double, longitude: Double) {
-        self.latitude = latitude
-        self.longitude = longitude
+    init(lon: Double, lat: Double) {
+        self.longitude = lon
+        self.latitude = lat
     }
 }
