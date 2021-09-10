@@ -44,7 +44,8 @@
 		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
 		92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBEE8526E87880008F52CA /* SignUpViewController.swift */; };
-		99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E5365C26E97438004E06C5 /* Profile.storyboard */; };
+		99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */; };
+		99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DFE26EAF4A700B20416 /* ProfileRecord.swift */; };
 		99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E5365E26E977B2004E06C5 /* ProfileViewController.swift */; };
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
 		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
@@ -115,7 +116,8 @@
 		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		92DBEE8526E87880008F52CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		99E5365C26E97438004E06C5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		99866DFE26EAF4A700B20416 /* ProfileRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRecord.swift; sourceTree = "<group>"; };
 		99E5365E26E977B2004E06C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
@@ -217,7 +219,6 @@
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
 				12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */,
-				99E5365C26E97438004E06C5 /* Profile.storyboard */,
 				99F3A3F126E86ACC00D72179 /* Donation.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
@@ -259,6 +260,7 @@
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
 				99E5365E26E977B2004E06C5 /* ProfileViewController.swift */,
+				99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +274,7 @@
 				92C0886726E7CFF800C95A41 /* IntroSlide.swift */,
 				929AD31C26E91634006A83A7 /* Event.swift */,
 				929AD32126E91696006A83A7 /* Site.swift */,
+				99866DFE26EAF4A700B20416 /* ProfileRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,7 +407,6 @@
 				92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */,
 				927DB03B26E6E51F006D6340 /* Lato-Thin.ttf in Resources */,
 				927DB03926E6E51F006D6340 /* Lato-Italic.ttf in Resources */,
-				99E5365D26E97438004E06C5 /* Profile.storyboard in Resources */,
 				927DB03F26E6E51F006D6340 /* Lato-Regular.ttf in Resources */,
 				9299829C26E3E93F008E8285 /* Main.storyboard in Resources */,
 				927DB03E26E6E51F006D6340 /* Lato-BoldItalic.ttf in Resources */,
@@ -484,9 +486,11 @@
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				929AD32226E91696006A83A7 /* Site.swift in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
+				99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
+				99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */,
 				92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */,
 				92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */,
 				929AD30B26E9092F006A83A7 /* MainMenuViewController.swift in Sources */,

@@ -11,6 +11,8 @@ struct User
 {
     let userId: String
     let email: String
+    let rank: String
+    
     
     init(authData: Firebase.User)
     {
