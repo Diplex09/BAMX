@@ -48,7 +48,7 @@
 		99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DFE26EAF4A700B20416 /* ProfileRecord.swift */; };
 		99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E5365E26E977B2004E06C5 /* ProfileViewController.swift */; };
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
-		99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F3A3F126E86ACC00D72179 /* Donation.storyboard */; };
+		BD0DEBF126EB39D100C803E2 /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0DEBF026EB39D000C803E2 /* Donation.storyboard */; };
 		BD8B81E026E973DB0071E9FC /* MoneyChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
@@ -120,8 +120,8 @@
 		99866DFE26EAF4A700B20416 /* ProfileRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRecord.swift; sourceTree = "<group>"; };
 		99E5365E26E977B2004E06C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
-		99F3A3F226E86ACC00D72179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donation.storyboard; sourceTree = "<group>"; };
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0DEBF026EB39D000C803E2 /* Donation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Donation.storyboard; path = ../../../../Desktop/Donation.storyboard; sourceTree = "<group>"; };
 		BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyChoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +218,7 @@
 				9299829626E3E93F008E8285 /* SceneDelegate.swift */,
 				9299829826E3E93F008E8285 /* ViewController.swift */,
 				9299829A26E3E93F008E8285 /* Main.storyboard */,
-				99F3A3F126E86ACC00D72179 /* Donation.storyboard */,
+				BD0DEBF026EB39D000C803E2 /* Donation.storyboard */,
 				929982A026E3E940008E8285 /* Assets.xcassets */,
 				929982A226E3E940008E8285 /* LaunchScreen.storyboard */,
 				929982A526E3E940008E8285 /* Info.plist */,
@@ -395,12 +395,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				927DB04226E6E51F006D6340 /* Lato-Light.ttf in Resources */,
+				BD0DEBF126EB39D100C803E2 /* Donation.storyboard in Resources */,
 				927DB04126E6E51F006D6340 /* Lato-BlackItalic.ttf in Resources */,
 				927DB03C26E6E51F006D6340 /* Lato-Bold.ttf in Resources */,
 				927DB04026E6E51F006D6340 /* Lato-LightItalic.ttf in Resources */,
 				928A490126E68895001CD187 /* AppIconImage.png in Resources */,
 				927DB03A26E6E51F006D6340 /* Lato-ThinItalic.ttf in Resources */,
-				99F3A3F326E86ACC00D72179 /* Donation.storyboard in Resources */,
 				929982A426E3E940008E8285 /* LaunchScreen.storyboard in Resources */,
 				927DB03D26E6E51F006D6340 /* Lato-Black.ttf in Resources */,
 				929982A126E3E940008E8285 /* Assets.xcassets in Resources */,
@@ -550,14 +550,6 @@
 				929982A326E3E940008E8285 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		99F3A3F126E86ACC00D72179 /* Donation.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99F3A3F226E86ACC00D72179 /* Base */,
-			);
-			name = Donation.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
