@@ -8,6 +8,12 @@
 // ViewControllerDonation
 import UIKit
 
+func returnBtnValue(btnTitle: String) ->(String){
+    let btnChoose = btnTitle
+    return(btnChoose)
+}
+
+
 class CellClass: UITableViewCell{
     
 }
@@ -17,14 +23,13 @@ class DonationsViewController: UIViewController {
     @IBOutlet var btnDonationType: UIButton!
     @IBOutlet weak var btnDonatorType: UIButton!
     @IBOutlet var btnEventType: UIButton!
-    
+     
 
     let transparentView = UIView()
     let tableView = UITableView()
-    
     var currentBtn = UIButton()
-    
     var dataSource = [String]()
+    var viewChoose: String = ""
     
     
     override func viewDidLoad() {
@@ -32,7 +37,6 @@ class DonationsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
-        
         // Do any additional setup after loading the view.
     }
     
@@ -61,6 +65,7 @@ class DonationsViewController: UIViewController {
     
     
     @objc func removeTransparentView(){
+        viewChoose = btnDonationType.currentTitle!
         let frames = currentBtn.frame
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.transparentView.alpha = 0
@@ -71,7 +76,8 @@ class DonationsViewController: UIViewController {
     
     
     
-    @IBAction func onClickDonation(_ sender: Any) {
+    @IBAction func onClickDonation(_ sender: UIButton) {
+        //let labelText = sender.currentTitle!
         dataSource = ["Efectivo", "Despensa"]
         currentBtn = btnDonationType
         addTransparentView(frames: btnDonationType.frame)
@@ -93,7 +99,9 @@ class DonationsViewController: UIViewController {
     
     @IBAction func didTapButton(){
         let moneyChoice = storyboard?.instantiateViewController(identifier: "money_donation") as! MoneyChoiceViewController
-        present(moneyChoice, animated: true)
+        if viewChoose == "Efectivo" {
+            present(moneyChoice, animated: true)
+        }
     }
 }
 
@@ -119,5 +127,3 @@ extension DonationsViewController: UITableViewDelegate, UITableViewDataSource {
         removeTransparentView()
     }
 }
-
-
