@@ -32,12 +32,11 @@ class ProfileCollectionViewCell: UICollectionViewCell{
             ProfileRecordNumber.text = nil
             ProfileRecordUpdate.text = nil
             backgroundColorView.backgroundColor = nil
-            
         }
-        
         backgroundColorView.layer.cornerRadius = 10.0
         backgroundColorView.layer.masksToBounds = true
         
+
     }
 
 
