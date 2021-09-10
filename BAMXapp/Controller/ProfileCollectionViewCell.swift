@@ -26,12 +26,23 @@ class ProfileCollectionViewCell: UICollectionViewCell{
             ProfileRecordNumber.text = profileRecord.number
             ProfileRecordUpdate.text = profileRecord.date
             backgroundColorView.backgroundColor = profileRecord.color
+              
+        }else{
+            ProfileRecordLabel.text = nil
+            ProfileRecordNumber.text = nil
+            ProfileRecordUpdate.text = nil
+            backgroundColorView.backgroundColor = nil
             
         }
+        
+        backgroundColorView.layer.cornerRadius = 10.0
+        backgroundColorView.layer.masksToBounds = true
+        
     }
 
 
 }
+
 
 
 
