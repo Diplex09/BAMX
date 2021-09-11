@@ -22,18 +22,18 @@ struct Event {
     let key: String
     
     init(id:Int, title: String, description: String, date: Date, place: Place, img: UIImage) { //dummy init
-        self.id = 0
-        self.title = title
-        self.description = description
-        self.date = date
-        self.place = place
-        self.latitude = place.latitude
-        self.longitude = place.longitude
-        self.eventImage = img
-        self.imgURL = ""
-        self.reference = DatabaseReference()
-        self.key = "dummyKey"
-    }
+            self.id = 0
+            self.title = title
+            self.description = description
+            self.date = date
+            self.place = place
+            self.latitude = place.latitude
+            self.longitude = place.longitude
+            self.eventImage = img
+            self.imgURL = ""
+            self.reference = DatabaseReference()
+            self.key = "dummyKey"
+        }
     
     init(id: Int, title: String, desc: String, date: Int, longitude: Double, latitude: Double, imgURL: String, snapshot: DataSnapshot) {
         self.reference = snapshot.ref
@@ -51,7 +51,6 @@ struct Event {
         self.place = Place(latitude: latitude, longitude: longitude)
         
         self.eventImage = UIImage()
-        
         self.imgURL = imgURL
     }
     

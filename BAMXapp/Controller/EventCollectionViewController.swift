@@ -9,9 +9,9 @@ import UIKit
 import Firebase
 import FirebaseStorage
 
-private let reuseIdentifier = "eventCell"
+private let reuseIdentifier = "Cell"
 
-class EventCollectionViewController: UIViewController {
+class EventCollectionViewController: UICollectionViewController {
         
     let eventList = "cellToEventCard"
     let reference = Database.database().reference(withPath: "events")
@@ -41,12 +41,11 @@ class EventCollectionViewController: UIViewController {
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        var newEvents: [Event] = []
             
         let completed = reference.observe(.value) { snapshot in
             print(snapshot.childrenCount)
-            var newEvents: [Event] = []
-            
+                
             for counter in 1...snapshot.childrenCount {
                 let ev = self.reference.child("event\(counter)")
                     ev.observe(.value) { snapshot in
@@ -91,7 +90,7 @@ class EventCollectionViewController: UIViewController {
         }
             
             // usersReferenceObservers.append(users) //no necesario
-    }
+        }
         
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -114,16 +113,6 @@ class EventCollectionViewController: UIViewController {
 
     // MARK: UICollectionViewDataSource
 
-    
-    
-    // MARK: Process data
-    
-    @IBAction func eventCellDidTouch(_ sender: AnyObject) {
-        
-    }
-}
-
-extension EventCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return events.count
@@ -183,4 +172,11 @@ extension EventCollectionViewController: UICollectionViewDataSource, UICollectio
     
     }
     */
+    
+    // MARK: Process data
+    
+    @IBAction func eventCellDidTouch(_ sender: AnyObject) {
+        
+    }
+
 }
