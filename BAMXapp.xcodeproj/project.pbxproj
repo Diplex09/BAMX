@@ -41,7 +41,6 @@
 		92A1C1AC26EBA5CF00D41DBF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A1C1AB26EBA5CF00D41DBF /* Colors.xcassets */; };
 		92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */; };
 		92A1C1B626EBB03600D41DBF /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */; };
-		92A1C1BC26EBB05E00D41DBF /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */; };
 		92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC86CD26E437C900512F9F /* LoginViewController.swift */; };
 		92AD58EB26E3EC39002B77D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */; };
 		92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */; };
@@ -118,7 +117,6 @@
 		92A1C1AB26EBA5CF00D41DBF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
-		92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
 		92AC86CD26E437C900512F9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92AD58EA26E3EC39002B77D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92C0886226E7CE9D00C95A41 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 		92AD591826E3F0D8002B77D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92A1C1BA26EBB05E00D41DBF /* EventCollectionViewController.swift */,
 				92A1C1B526EBB03600D41DBF /* CustomTabBarViewController.swift */,
 				92A1C1B026EBB01B00D41DBF /* TabBarViewController.swift */,
 				92AC86CD26E437C900512F9F /* LoginViewController.swift */,
@@ -513,7 +510,6 @@
 				92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */,
 				9254CFA526EBB8D5000D2619 /* Place.swift in Sources */,
 				929AD30B26E9092F006A83A7 /* MainMenuViewController.swift in Sources */,
-				92A1C1BC26EBB05E00D41DBF /* EventCollectionViewController.swift in Sources */,
 				9299829726E3E93F008E8285 /* SceneDelegate.swift in Sources */,
 				922CAD0A26E3FAF800DB9DED /* User.swift in Sources */,
 				99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */,

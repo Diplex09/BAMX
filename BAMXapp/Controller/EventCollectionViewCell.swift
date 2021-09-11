@@ -40,7 +40,7 @@ class EventCollectionViewCell: UICollectionViewCell {
         dateFormatter.dateFormat = "E, d, MMMM, y, HH:mm" //checar formato, pero creo q esta bien...
         
         if event != nil {
-            //imageViewCell.image = event.eventImage
+            imageViewCell.image = event.eventImage
             titleLbl.text = event.title
             dateLbl.text = dateFormatter.string(from: event.date)
             donatorsLbl.text = "Donadores: " //contar donadores del evento
@@ -51,7 +51,7 @@ class EventCollectionViewCell: UICollectionViewCell {
             dateLbl.text = nil
         }
            
-        imageViewCell.layer.cornerRadius = 20.0
-        imageViewCell.layer.masksToBounds = true
+        //imageViewCell.layer.cornerRadius = 20.0
+        //imageViewCell.layer.masksToBounds = true
     }
 }
