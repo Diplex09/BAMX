@@ -161,7 +161,8 @@ extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewData
                
         cell.configure(with: event, imageRef: ref)*/
         cell.event = event
-           
+        cell.layoutIfNeeded()
+        
         return cell
     }
 }

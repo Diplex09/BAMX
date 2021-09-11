@@ -51,7 +51,7 @@ class EventCollectionViewCell: UICollectionViewCell {
             dateLbl.text = nil
         }
            
-        imageViewCell.layer.cornerRadius = 20.0
-        imageViewCell.layer.masksToBounds = true
+        //imageViewCell.layer.cornerRadius = 20.0
+        //imageViewCell.layer.masksToBounds = true
     }
 }
