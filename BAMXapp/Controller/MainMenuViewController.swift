@@ -6,19 +6,18 @@
 //
 import UIKit
 import Firebase
+import iCarousel
 
-class MainMenuViewController: UIViewController {
+class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
     
     var uid = ""
     var email = ""
     var name = ""
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    
+    @IBOutlet weak var eventCardsView: iCarousel!
     @IBOutlet weak var greetLbl: UILabel!
     
     let eventList = "cellToEventCard"
-    let reuseIdentifier = "eventCell"
     let reference = Database.database().reference(withPath: "events")
     var referenceObservers: [DatabaseHandle] = []
     
@@ -30,10 +29,16 @@ class MainMenuViewController: UIViewController {
     let dummyEvents = [
                 Event(id: 1, title: "Event1", description: "desc", date: Date(), place: Place(latitude: 0, longitude: 0), img:  #imageLiteral(resourceName: "eventPlaceholder")),
                 Event(id: 2, title: "Event2", description: "desc", date: Date(), place: Place(latitude: 0, longitude: 0), img: #imageLiteral(resourceName: "event_2"))]
+    
     var user: User?
     var onlineUserCount =  UIBarButtonItem()
     var handle: AuthStateDidChangeListenerHandle?
     var listenerHandle: AuthStateDidChangeListenerHandle?
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +48,7 @@ class MainMenuViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        eventCardsView.type = .linear
     }
     
     
@@ -136,33 +140,68 @@ class MainMenuViewController: UIViewController {
         let delimiter = " "
         let shortName = name.components(separatedBy: delimiter)
         print(shortName[0])
-        greetLbl.text = "Hola " + shortName[0]
-    }
-}
-
-extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        greetLbl.text = "Hola, " + shortName[0]
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return events.count
+}
+
+extension MainMenuViewController {
+    
+    @objc private func didTapCard(_ sender: UITapGestureRecognizer) {
+        print("did tap card", sender)
+    }
+    
+    func numberOfItems(in carousel: iCarousel) -> Int {
         return dummyEvents.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! EventCollectionViewCell
-           
-        // Configure the cell
-        let event = dummyEvents[indexPath.item]
-               
-        /*let storageRef = storage.reference()
-        let ref = storageRef.child("event_\(indexPath.row)")
-               
-        cell.configure(with: event, imageRef: ref)*/
-        cell.event = event
-        cell.layoutIfNeeded()
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        let tempView = UIView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height))
         
-        return cell
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapCard(_:)))
+        tempView.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        let event = dummyEvents[index]
+        // TODO: fix sizes
+        
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
+        imgView.image = event.eventImage
+        imgView.cornerRadius = 20
+        imgView.contentMode = .scaleAspectFit
+        
+        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 50))
+        titleLbl.text = event.title
+        titleLbl.font = UIFont(name: "Lato-Bold", size: 18)
+        
+        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 30))
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.locale = Locale(identifier: "es_MX")
+        dateFormatter.dateFormat = "EEE, d, MMMM, y  HH:mm" //dia sem (Lun), dia, mes, año, hora::min
+        //checar formato, pero creo q esta bien...
+        dateLbl.text = dateFormatter.string(from: event.date)
+        dateLbl.font = UIFont(name: "Lato-Regular", size: 14)
+        dateLbl.textColor = .gray
+        
+        
+        tempView.addSubview(imgView)
+        tempView.addSubview(titleLbl)
+        tempView.addSubview(dateLbl)
+        
+        tempView.cornerRadius = 20
+        tempView.backgroundColor = .white
+        
+        return tempView
+    }
+    
+    func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        
+        if option == iCarouselOption.spacing {
+            return value * 1.1
+        }
+        
+        return value
     }
 }

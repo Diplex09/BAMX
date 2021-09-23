@@ -9,6 +9,6 @@ target 'BAMXapp' do
   pod 'CardSlider'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
-  pod "ScalingCarousel"
+  pod 'iCarousel'
   use_frameworks!
 end

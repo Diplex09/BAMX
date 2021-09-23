@@ -294,7 +294,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v44-R4-VcI">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v44-R4-VcI">
                                                     <rect key="frame" x="78" y="82" width="257" height="256"/>
                                                 </imageView>
                                             </subviews>
@@ -398,74 +398,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x6E-ZA-5Sh">
-                                <rect key="frame" x="33" y="140" width="267" height="218"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="218" id="2J3-ci-Dyt"/>
-                                    <constraint firstAttribute="width" constant="267" id="U37-SX-a57"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GVm-aB-Vjx">
-                                    <size key="itemSize" width="264" height="217"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="eventCell" id="phO-He-Yz2" customClass="EventCollectionViewCell" customModule="BAMXapp" customModuleProvider="target">
-                                        <rect key="frame" x="1.5" y="0.0" width="264" height="217"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KSi-BV-EBe">
-                                            <rect key="frame" x="0.0" y="0.0" width="264" height="217"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventPlaceholder" id="PkT-C7-xHr">
-                                                    <rect key="frame" x="-6" y="0.0" width="270" height="136"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Fc-5I-LOY">
-                                                    <rect key="frame" x="8" y="135" width="240" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ip5-Ca-0z8">
-                                                    <rect key="frame" x="10" y="158" width="246" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CrN-5t-BCh">
-                                                    <rect key="frame" x="10" y="185" width="90" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
-                                                    <color key="textColor" red="0.22101495611495686" green="0.61398963730569944" blue="0.04513903520473668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="264" height="217"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="dateLbl" destination="Ip5-Ca-0z8" id="L55-TR-ch2"/>
-                                            <outlet property="donatorsLbl" destination="CrN-5t-BCh" id="vLv-49-caJ"/>
-                                            <outlet property="imageViewCell" destination="PkT-C7-xHr" id="CFS-xS-dQs"/>
-                                            <outlet property="titleLbl" destination="5Fc-5I-LOY" id="2Tj-aU-OOZ"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greeting name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZl-3l-Px7">
                                 <rect key="frame" x="33" y="48" width="361" height="35"/>
                                 <constraints>
@@ -636,6 +568,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHp-Xo-Z3g" customClass="iCarousel">
+                                <rect key="frame" x="33" y="135" width="279" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4cs-gT-MYD" id="fmj-SK-Zm7"/>
+                                    <outlet property="delegate" destination="4cs-gT-MYD" id="9Sc-x6-RiS"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y75-Ne-aYN"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -643,14 +583,10 @@
                             <constraint firstItem="Zkg-aT-BPc" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" id="6pW-Wa-gMB"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="trailing" secondItem="oZl-3l-Px7" secondAttribute="trailing" constant="20" id="8L7-Xa-QUZ"/>
                             <constraint firstItem="Zkg-aT-BPc" firstAttribute="top" secondItem="Y75-Ne-aYN" secondAttribute="top" constant="322" id="A35-G4-hLL"/>
-                            <constraint firstItem="Y75-Ne-aYN" firstAttribute="bottom" secondItem="x6E-ZA-5Sh" secondAttribute="bottom" constant="455" id="Hll-aY-tYo"/>
                             <constraint firstItem="oZl-3l-Px7" firstAttribute="top" secondItem="Y75-Ne-aYN" secondAttribute="top" constant="4" id="TQI-gx-L3U"/>
-                            <constraint firstItem="Zkg-aT-BPc" firstAttribute="top" secondItem="x6E-ZA-5Sh" secondAttribute="bottom" constant="8" symbolic="YES" id="TgN-Ft-VhJ"/>
-                            <constraint firstItem="x6E-ZA-5Sh" firstAttribute="top" secondItem="Pp4-5N-reM" secondAttribute="bottom" constant="18" id="dbr-sc-WTs"/>
                             <constraint firstItem="oZl-3l-Px7" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="ec8-5Z-LAz"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="bottom" secondItem="Zkg-aT-BPc" secondAttribute="bottom" constant="29" id="f7p-qF-kyt"/>
                             <constraint firstItem="Pp4-5N-reM" firstAttribute="top" secondItem="oZl-3l-Px7" secondAttribute="bottom" constant="17" id="hnE-n4-gsj"/>
-                            <constraint firstItem="x6E-ZA-5Sh" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="n5a-eD-6gl"/>
                             <constraint firstItem="Pp4-5N-reM" firstAttribute="leading" secondItem="Y75-Ne-aYN" secondAttribute="leading" constant="33" id="sLT-Uz-AwT"/>
                             <constraint firstItem="Y75-Ne-aYN" firstAttribute="trailing" secondItem="Zkg-aT-BPc" secondAttribute="trailing" id="xtc-3O-fYY"/>
                         </constraints>
@@ -658,7 +594,7 @@
                     <navigationItem key="navigationItem" id="qSy-Gm-iYj"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView" destination="x6E-ZA-5Sh" id="wPa-Az-Gko"/>
+                        <outlet property="eventCardsView" destination="kHp-Xo-Z3g" id="EXy-AG-ZVQ"/>
                         <outlet property="greetLbl" destination="oZl-3l-Px7" id="cPK-Zd-SyJ"/>
                     </connections>
                 </viewController>
@@ -955,7 +891,7 @@
         <!--Profile View Controller-->
         <scene sceneID="qtp-Tf-MNe">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="L3r-Q6-Lvc" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="L3r-Q6-Lvc" customClass="ProfileViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Dc-Kr-BsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -963,7 +899,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-top" translatesAutoresizingMaskIntoConstraints="NO" id="OeH-N7-7Xw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="182"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventPlaceholder" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swm-O0-ea0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mirandao_profile_pic" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swm-O0-ea0">
                                 <rect key="frame" x="38" y="138" width="117" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="2Xu-ep-gJ9"/>
@@ -976,8 +912,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7O-BW-joe">
-                                <rect key="frame" x="38" y="275.5" width="83" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miranda de la O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7O-BW-joe">
+                                <rect key="frame" x="38" y="275.5" width="159" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1040,13 +976,10 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="146" height="179"/>
                                         <connections>
-                                            <outlet property="ProfileRecordLabel" destination="W6L-Ss-BUI" id="68f-LQ-Zac"/>
-                                            <outlet property="ProfileRecordNumber" destination="taf-pJ-fEp" id="dPG-TX-155"/>
-                                            <outlet property="ProfileRecordUpdate" destination="lTz-EQ-kMY" id="Wop-go-xtA"/>
+                                            <outlet property="ProfileRecordLabel" destination="W6L-Ss-BUI" id="Geu-XP-hPq"/>
+                                            <outlet property="ProfileRecordNumber" destination="taf-pJ-fEp" id="U5y-SU-xzb"/>
+                                            <outlet property="ProfileRecordUpdate" destination="lTz-EQ-kMY" id="ENq-eD-vgx"/>
                                             <outlet property="backgroundColorView" destination="6gb-Ca-Yjy" id="XRQ-hz-KJu"/>
-                                            <outlet property="numberBox" destination="taf-pJ-fEp" id="Kx2-vL-BgM"/>
-                                            <outlet property="titleBox" destination="W6L-Ss-BUI" id="gX9-Je-noF"/>
-                                            <outlet property="updateBox" destination="lTz-EQ-kMY" id="DUX-vu-XcO"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1248,7 +1181,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="L3r-Q6-Lvc" kind="relationship" relationship="rootViewController" id="8jJ-tf-JvB"/>
+                        <segue destination="L3r-Q6-Lvc" kind="relationship" relationship="rootViewController" id="kZG-yB-w9x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWS-3a-Ufb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1342,11 +1275,11 @@
         <image name="User" width="53" height="62"/>
         <image name="background-top" width="4688" height="3546"/>
         <image name="bamx-logo" width="176" height="68"/>
-        <image name="eventPlaceholder" width="375" height="235"/>
         <image name="gray-rectangle" width="640" height="640"/>
         <image name="home-icon" width="27" height="27"/>
         <image name="icon-facebook" width="50" height="50"/>
         <image name="icon-google" width="50" height="50"/>
+        <image name="mirandao_profile_pic" width="512" height="512"/>
         <image name="notification-icon" width="24" height="26"/>
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="profile-icon" width="20" height="26"/>

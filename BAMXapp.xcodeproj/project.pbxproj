@@ -12,7 +12,6 @@
 		9202AADF26EB9F8A00B3A98C /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9202AADE26EB9F8A00B3A98C /* Donation.storyboard */; };
 		92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */; };
 		922CAD0A26E3FAF800DB9DED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CAD0926E3FAF800DB9DED /* User.swift */; };
-		9254CF9D26EBB85E000D2619 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9254CF9C26EBB85E000D2619 /* EventCollectionViewCell.swift */; };
 		9254CFA526EBB8D5000D2619 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9254CFA426EBB8D5000D2619 /* Place.swift */; };
 		927DB02A26E6DC70006D6340 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DB02926E6DC70006D6340 /* IntroViewController.swift */; };
 		927DB03926E6E51F006D6340 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 927DB02F26E6E51E006D6340 /* Lato-Italic.ttf */; };
@@ -82,7 +81,6 @@
 		9202AADE26EB9F8A00B3A98C /* Donation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Donation.storyboard; sourceTree = "<group>"; };
 		92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		922CAD0926E3FAF800DB9DED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9254CF9C26EBB85E000D2619 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		9254CFA426EBB8D5000D2619 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		927DB02926E6DC70006D6340 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		927DB02F26E6E51E006D6340 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
 				99E5365E26E977B2004E06C5 /* ProfileViewController.swift */,
 				99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */,
-				9254CF9C26EBB85E000D2619 /* EventCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,7 +488,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C0886326E7CE9D00C95A41 /* UIViewExtension.swift in Sources */,
-				9254CF9D26EBB85E000D2619 /* EventCollectionViewCell.swift in Sources */,
 				927DB02A26E6DC70006D6340 /* IntroViewController.swift in Sources */,
 				9299829926E3E93F008E8285 /* ViewController.swift in Sources */,
 				BD8B81E026E973DB0071E9FC /* MoneyChoiceViewController.swift in Sources */,

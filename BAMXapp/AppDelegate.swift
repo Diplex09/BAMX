@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         do
         {
-            sleep(3)
+            sleep(1)
         }
         
         return true
