@@ -37,18 +37,55 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
     
     override class func awakeFromNib() {
         super.awakeFromNib()
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserProfile()
+        fetch()
+        
+        // Do any additional setup after loading the view.
+        eventCardsView.type = .linear
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
+            self.eventCardsView.reloadData()
+        }
         
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
-
-        // Do any additional setup after loading the view.
-        eventCardsView.type = .linear
+    }
+    
+    func fetch() {
+        let completed = reference.observe(.value) { snapshot in
+            
+            for counter in 1...snapshot.childrenCount {
+                let ev = self.reference.child("event\(counter)")
+                    ev.observe(.value) { snapshot in
+                        if
+                            let event = Event(snapshot: snapshot) {
+                                print("ADDING ITEM")
+                                self.events.append(event)
+                            print("Eventos dentro de for: ", self.events)
+                        }
+                        else {
+                            print("No event \(counter)")
+                        }
+                    }
+            }
+            //self.events = newEvents
+        }
+        
+        referenceObservers.append(completed)
+        
+        listenerHandle = Auth.auth().addStateDidChangeListener { _, user in
+            guard let user = user else { return }
+                
+            self.user = User(authData: user)
+                
+            let curentUserRef = self.usersReference.child(user.uid)
+            curentUserRef.setValue(user.email)
+            curentUserRef.onDisconnectRemoveValue()
+        }
     }
     
     
@@ -61,55 +98,6 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
                 self.navigationController?.popToRootViewController(animated: true)
             }
         })
-        
-        /*let completed = reference.observe(.value) { snapshot in
-            var newEvents: [Event] = []
-            
-            for counter in 1...snapshot.childrenCount {
-                let ev = self.reference.child("event\(counter)")
-                    ev.observe(.value) { snapshot in
-                        if
-                            let event = Event(snapshot: snapshot) {
-                                print("ADDING ITEM")
-                                newEvents.append(event)
-                                //print(newEvents) //aqui si imprime
-                                self.events = newEvents
-                            print(self.events)
-                        }
-                        else {
-                            print("No event \(counter)")
-                        }
-                    }
-            }
-            //self.events = newEvents
-            print(self.events)
-            self.collectionView.reloadData()
-        }
-        
-        print("My events: ",self.events) //nada
-        referenceObservers.append(completed)*/
-            
-            
-        listenerHandle = Auth.auth().addStateDidChangeListener { _, user in
-            guard let user = user else { return }
-                
-            self.user = User(authData: user)
-                
-            let curentUserRef = self.usersReference.child(user.uid)
-            curentUserRef.setValue(user.email)
-            curentUserRef.onDisconnectRemoveValue()
-        }
-            
-        let users = usersReference.observe(.value) { snapshot in
-            if snapshot.exists() {
-                self.onlineUserCount.title = snapshot.childrenCount.description
-            }
-            else {
-                    self.onlineUserCount.title = "0"
-            }
-        }
-            
-            // usersReferenceObservers.append(users) //no necesario
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -127,7 +115,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         Auth.auth().removeStateDidChangeListener(handle)
     }
     
-    func getUserProfile(){
+    func getUserProfile() {
         let user = Auth.auth().currentUser
         if user != nil {
           // The user's ID, unique to the Firebase project.
@@ -137,6 +125,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
             email = user?.email ?? " "
             name = user?.displayName ?? " "
         }
+        
         let delimiter = " "
         let shortName = name.components(separatedBy: delimiter)
         print(shortName[0])
@@ -152,7 +141,7 @@ extension MainMenuViewController {
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return dummyEvents.count
+        return self.events.count
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
@@ -163,11 +152,12 @@ extension MainMenuViewController {
         tempView.addGestureRecognizer(tapGestureRecognizer)
         
         
-        let event = dummyEvents[index]
+        let event = self.events[index]
         // TODO: fix sizes
         
         let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
-        imgView.image = event.eventImage
+        // imgView.image = event.eventImage
+        imgView.load(url: URL(string: event.imgURL)!)
         imgView.cornerRadius = 20
         imgView.contentMode = .scaleAspectFit
         
