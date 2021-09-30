@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -596,6 +597,7 @@
                     <connections>
                         <outlet property="eventCardsView" destination="kHp-Xo-Z3g" id="EXy-AG-ZVQ"/>
                         <outlet property="greetLbl" destination="oZl-3l-Px7" id="cPK-Zd-SyJ"/>
+                        <segue destination="VHP-MN-cqA" kind="show" identifier="showEventDetail" id="DPz-GV-W0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnW-1W-Sro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1265,6 +1267,121 @@
             </objects>
             <point key="canvasLocation" x="4386" y="892"/>
         </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="9yR-v6-EYQ">
+            <objects>
+                <viewController storyboardIdentifier="EventDetail" id="VHP-MN-cqA" customClass="EventDetailViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fs9-ye-OgS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JnI-L2-sFG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="j10-yc-LL2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EVENTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iga-8i-r9e">
+                                <rect key="frame" x="36" y="328" width="63" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" name="bamx-red"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4h-GN-4em">
+                                <rect key="frame" x="36" y="363" width="341" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="n3E-CC-7Af"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By Banco de Alimentos de Guadalajara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-BN-Jug">
+                                <rect key="frame" x="36" y="407" width="202" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-hy-bJ4">
+                                <rect key="frame" x="106" y="582" width="234" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-mY-csw">
+                                <rect key="frame" x="36" y="441" width="341" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-Wn-MsO">
+                                <rect key="frame" x="48" y="580" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-Vv-hQU">
+                                <rect key="frame" x="48" y="649" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-gi-mYh">
+                                <rect key="frame" x="36" y="711" width="122" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="bamx-red"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                <state key="normal" title="Donar">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-eA-0do">
+                                <rect key="frame" x="106" y="652" width="234" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-N0-2JA">
+                                <rect key="frame" x="255" y="711" width="122" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="bamx-green"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                <state key="normal" title="Participar">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jlP-p1-f48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="bottom" secondItem="JnI-L2-sFG" secondAttribute="bottom" constant="518" id="boH-cY-8ie"/>
+                            <constraint firstItem="p4h-GN-4em" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="36" id="dva-OB-xWo"/>
+                            <constraint firstItem="p4h-GN-4em" firstAttribute="top" secondItem="JnI-L2-sFG" secondAttribute="bottom" constant="68" id="f2q-o7-j6g"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="top" secondItem="JnI-L2-sFG" secondAttribute="top" constant="44" id="l8B-mC-TMb"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="JnI-L2-sFG" secondAttribute="trailing" id="pjP-Ha-QUa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cf2-nh-Kbx"/>
+                    <connections>
+                        <outlet property="dateLbl" destination="J0h-hy-bJ4" id="GZK-8t-O2p"/>
+                        <outlet property="descLbl" destination="tgl-mY-csw" id="kEJ-er-96O"/>
+                        <outlet property="imgView" destination="JnI-L2-sFG" id="S4e-Tz-pRP"/>
+                        <outlet property="placeLbl" destination="pxW-eA-0do" id="cFJ-I6-zid"/>
+                        <outlet property="titleLbl" destination="p4h-GN-4em" id="LDd-5P-Kqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3d-jU-3VG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5231.884057971015" y="-443.30357142857139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Calendar" width="78" height="62"/>
@@ -1275,15 +1392,23 @@
         <image name="User" width="53" height="62"/>
         <image name="background-top" width="4688" height="3546"/>
         <image name="bamx-logo" width="176" height="68"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="gray-rectangle" width="640" height="640"/>
         <image name="home-icon" width="27" height="27"/>
         <image name="icon-facebook" width="50" height="50"/>
         <image name="icon-google" width="50" height="50"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="mirandao_profile_pic" width="512" height="512"/>
         <image name="notification-icon" width="24" height="26"/>
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="profile-icon" width="20" height="26"/>
         <image name="reward-icon" width="27" height="28"/>
+        <namedColor name="bamx-green">
+            <color red="0.057000000029802322" green="0.5910000205039978" blue="0.22800000011920929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bamx-red">
+            <color red="0.99699997901916504" green="0.14599999785423279" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

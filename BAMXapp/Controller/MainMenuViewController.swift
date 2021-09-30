@@ -7,6 +7,8 @@
 import UIKit
 import Firebase
 import iCarousel
+import MapKit
+import CoreLocation
 
 class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselDataSource {
     
@@ -26,9 +28,6 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
     let storage = Storage.storage()
     // Properties
     var events: [Event] = []
-    let dummyEvents = [
-                Event(id: 1, title: "Event1", description: "desc", date: Date(), place: Place(latitude: 0, longitude: 0), img:  #imageLiteral(resourceName: "eventPlaceholder")),
-                Event(id: 2, title: "Event2", description: "desc", date: Date(), place: Place(latitude: 0, longitude: 0), img: #imageLiteral(resourceName: "event_2"))]
     
     var user: User?
     var onlineUserCount =  UIBarButtonItem()
@@ -136,8 +135,79 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
 
 extension MainMenuViewController {
     
-    @objc private func didTapCard(_ sender: UITapGestureRecognizer) {
+    func parseAddress(_ selectedItem: CLPlacemark) -> String {
+        // space between number and street
+        let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil) ? " " : ""
+        
+        // space between street and city
+        let secondSpace = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.administrativeArea != nil) ? " " : ""
+        
+        // comma between city and state
+        let comma = (selectedItem.subAdministrativeArea != nil && selectedItem.administrativeArea != nil) ? ", " : ""
+        
+        let addressLine = String(
+            format:"%@%@%@%@%@%@%@",
+            // street name
+            selectedItem.thoroughfare ?? "",
+            secondSpace,
+            // street number
+            selectedItem.subThoroughfare ?? "",
+            firstSpace,
+            // city
+            selectedItem.locality ?? "",
+            comma,
+            // state
+            selectedItem.administrativeArea ?? ""
+        )
+        
+        return addressLine
+    }
+    
+    /*@objc private func didTapCard(_ sender: UITapGestureRecognizer) {
         print("did tap card", sender)
+    }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showEventDetail" {
+            let detailVC = segue.destination as? EventDetailViewController
+            
+            if let event = sender as? Event {
+                detailVC?.event = event
+            }
+        }
+    }
+    
+    func carousel(_ carousel: iCarousel, didSelectItemAt index: Int) {
+        let event = events[index]
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "EventDetail") as? EventDetailViewController {
+                print(index)
+                vc.loadImgView.load(url: URL(string: event.imgURL)!)
+                
+                vc.titleStr = event.title
+                vc.desc = event.description!
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.locale = Locale(identifier: "es_MX")
+                dateFormatter.dateFormat = "EEE, d, MMMM, y  HH:mm" //dia sem (Lun), dia, mes, año, hora::min
+                //checar formato, pero creo q esta bien...
+                vc.dateStr = dateFormatter.string(from: event.date)
+                
+                let latitude = event.place.latitude
+                let longitude = event.place.longitude
+                
+                let address = CLGeocoder.init()
+                address.reverseGeocodeLocation(CLLocation.init(latitude: latitude, longitude:longitude)) { (places, error) in
+                        if error == nil {
+                            guard let place = places?.first else { return }
+                            vc.placeStr = self.parseAddress(place)
+                        }
+                    }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
+                self.present(vc, animated: true, completion: nil)
+            }
+            //present(vc, animated: true, completion: nil)
+        }
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
@@ -148,15 +218,14 @@ extension MainMenuViewController {
         let tempView = UIView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height))
         
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapCard(_:)))
-        tempView.addGestureRecognizer(tapGestureRecognizer)
+        /*let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapCard(_:)))
+        tempView.addGestureRecognizer(tapGestureRecognizer)*/
         
         
         let event = self.events[index]
         // TODO: fix sizes
         
         let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
-        // imgView.image = event.eventImage
         imgView.load(url: URL(string: event.imgURL)!)
         imgView.cornerRadius = 20
         imgView.contentMode = .scaleAspectFit
