@@ -28,5 +28,10 @@ class MoneyChoiceViewController: UIViewController {
             equivalentOptions.alpha = 1
         }
     }
+    
+    @IBAction func didTapButton(){
+        let paymentMethod = storyboard?.instantiateViewController(identifier: "payment_id") as! PaymentViewController
+        navigationController?.pushViewController(paymentMethod, animated: true)
+        }
 
 }

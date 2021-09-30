@@ -6,6 +6,7 @@
 //
 
 // ViewControllerDonation
+
 import UIKit
 
 func returnBtnValue(btnTitle: String) ->(String){
@@ -32,14 +33,23 @@ class DonationsViewController: UIViewController {
     var viewChoose: String = ""
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CellClass.self, forCellReuseIdentifier: "Cell")
+        hideNavigationController()
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    func hideNavigationController(){
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+    }
+
     func addTransparentView(frames: CGRect){
         let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
         transparentView.frame = window?.frame ?? self.view.frame
@@ -62,7 +72,6 @@ class DonationsViewController: UIViewController {
             self.tableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + 5,width: frames.width, height: CGFloat(self.dataSource.count * 50))
         }, completion: nil)
     }
-    
     
     @objc func removeTransparentView(){
         viewChoose = btnDonationType.currentTitle!
@@ -100,7 +109,8 @@ class DonationsViewController: UIViewController {
     @IBAction func didTapButton(){
         let moneyChoice = storyboard?.instantiateViewController(identifier: "money_donation") as! MoneyChoiceViewController
         if viewChoose == "Efectivo" {
-            present(moneyChoice, animated: true)
+            //present(moneyChoice, animated: true)
+            navigationController?.pushViewController(moneyChoice, animated: true)
         }
     }
 }
