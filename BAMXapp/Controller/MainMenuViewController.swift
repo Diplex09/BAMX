@@ -203,7 +203,7 @@ extension MainMenuViewController {
                             vc.placeStr = self.parseAddress(place)
                         }
                     }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
                 self.present(vc, animated: true, completion: nil)
             }
             //present(vc, animated: true, completion: nil)
