@@ -196,6 +196,9 @@ extension MainMenuViewController {
                 let latitude = event.place.latitude
                 let longitude = event.place.longitude
                 
+                vc.loadLatitude = latitude
+                vc.loadLongitude = longitude
+                
                 let address = CLGeocoder.init()
                 address.reverseGeocodeLocation(CLLocation.init(latitude: latitude, longitude:longitude)) { (places, error) in
                         if error == nil {
