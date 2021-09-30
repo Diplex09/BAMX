@@ -42,24 +42,18 @@ class EventDetailViewController: UIViewController {
         
         latitude = loadLatitude
         longitude = loadLongitude
-        
-        setupPlaceLabelTap()
     }
     
-    @objc func placeLabelTapped(_ sender: UITapGestureRecognizer) {
-            print("labelTapped")
-            let place = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
-            let mapItem = MKMapItem(placemark: place)
-            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
-            mapItem.openInMaps(launchOptions: launchOptions)
+    //TODO: Add event to iOS Calendar
+    @IBAction func didTapAddToCalendar(_ sender: Any) {
+        print("adding to calendar...")
     }
-        
-    func setupPlaceLabelTap() {
-            
-            let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.placeLabelTapped(_:)))
-            self.placeLbl.isUserInteractionEnabled = true
-            self.placeLbl.addGestureRecognizer(labelTap)
-            
+    
+    @IBAction func didTapShowDirections(_ sender: Any) {
+        print("Opening direcitons in Apple Maps...")
+        let place = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+        let mapItem = MKMapItem(placemark: place)
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+        mapItem.openInMaps(launchOptions: launchOptions)
     }
-
 }
