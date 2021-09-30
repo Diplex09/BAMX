@@ -30,8 +30,9 @@ class MoneyChoiceViewController: UIViewController {
     }
     
     @IBAction func didTapButton(){
-        let paymentMethod = storyboard?.instantiateViewController(identifier: "payment_id") as! PaymentViewController
-        navigationController?.pushViewController(paymentMethod, animated: true)
+//        let paymentMethod = storyboard?.instantiateViewController(identifier: "payment_id") as! PaymentViewController
+//        navigationController?.pushViewController(paymentMethod, animated: true)
+        UIApplication.shared.open(URL(string: "https://bdalimentos.org/make-a-donation/?cause_id=8492")! as URL, options: [:], completionHandler: nil)
         }
 
 }
