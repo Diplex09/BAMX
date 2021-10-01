@@ -55,7 +55,6 @@
 		99F3A3EE26E8695F00D72179 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3ED26E8695F00D72179 /* DonationsViewController.swift */; };
 		BD8B81E026E973DB0071E9FC /* MoneyChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */; };
 		BDC5C33B270665A100581EA3 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5C33A270665A100581EA3 /* UserDefaultExtension.swift */; };
-		BDC5C33D27066B4B00581EA3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5C33C27066B4B00581EA3 /* PaymentViewController.swift */; };
 		EB81E496F6D48E3762203799 /* Pods_BAMXapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +133,6 @@
 		A6FD79D4F2C7ED5330534156 /* Pods_BAMXapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMXapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyChoiceViewController.swift; sourceTree = "<group>"; };
 		BDC5C33A270665A100581EA3 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
-		BDC5C33C27066B4B00581EA3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentViewController.swift; path = ../../../../../Desktop/PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,7 +272,6 @@
 				BD8B81DF26E973DB0071E9FC /* MoneyChoiceViewController.swift */,
 				92DBEE8526E87880008F52CA /* SignUpViewController.swift */,
 				929AD30A26E9092F006A83A7 /* MainMenuViewController.swift */,
-				BDC5C33C27066B4B00581EA3 /* PaymentViewController.swift */,
 				99E5365E26E977B2004E06C5 /* ProfileViewController.swift */,
 				99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */,
 				6656286E27053D6B003BB3F8 /* EventDetailViewController.swift */,
@@ -504,7 +501,6 @@
 				6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */,
-				BDC5C33D27066B4B00581EA3 /* PaymentViewController.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
 				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
