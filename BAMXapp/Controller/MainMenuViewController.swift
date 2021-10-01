@@ -231,13 +231,21 @@ extension MainMenuViewController {
         let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
         imgView.load(url: URL(string: event.imgURL)!)
         imgView.cornerRadius = 20
-        imgView.contentMode = .scaleAspectFit
+        //imgView.contentMode = .scaleAspectFit
+        imgView.contentMode = .scaleAspectFill
+        //imgView.contentMode = .top
         
-        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 50))
+        let maskView = UIView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
+        maskView.backgroundColor = .blue
+        maskView.layer.cornerRadius = 20
+        maskView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        imgView.mask = maskView
+        
+        let titleLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 50))
         titleLbl.text = event.title
         titleLbl.font = UIFont(name: "Lato-Bold", size: 18)
         
-        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 30))
+        let dateLbl = UILabel(frame: CGRect(x: 20, y: 110, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 30))
         let dateFormatter = DateFormatter()
         
         dateFormatter.locale = Locale(identifier: "es_MX")
