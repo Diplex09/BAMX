@@ -423,6 +423,10 @@
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
                     <connections>
+                        <outlet property="btn100" destination="DtV-gl-rvQ" id="INq-kI-aqa"/>
+                        <outlet property="btn1000" destination="7ok-jh-RUl" id="8gu-JT-KTQ"/>
+                        <outlet property="btn200" destination="pB3-Oy-snX" id="rpa-xN-xAJ"/>
+                        <outlet property="btn500" destination="9Du-Lv-VAk" id="3YU-6e-c6S"/>
                         <outlet property="currentValueField" destination="KEH-hj-onf" id="Z7v-5T-9qW"/>
                     </connections>
                 </viewController>
