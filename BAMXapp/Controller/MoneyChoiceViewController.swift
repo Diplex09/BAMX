@@ -9,8 +9,11 @@ import UIKit
 
 class MoneyChoiceViewController: UIViewController {
     
+    
     @IBOutlet weak var moneyPreset: UIView!
     @IBOutlet weak var equivalentOptions: UIView!
+    @IBOutlet var currentValueField: UITextField!
+    var moneyValue: Int = 0
 
     
 
@@ -34,5 +37,11 @@ class MoneyChoiceViewController: UIViewController {
 //        navigationController?.pushViewController(paymentMethod, animated: true)
         UIApplication.shared.open(URL(string: "https://bdalimentos.org/make-a-donation/?cause_id=8492")! as URL, options: [:], completionHandler: nil)
         }
+    @IBAction func didTapButtonColor(sender: UIButton){
+        
+        sender.backgroundColor = .red
+        sender.setTitleColor(.white, for: .normal)
+        
+    }
 
 }

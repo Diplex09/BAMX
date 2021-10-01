@@ -93,7 +93,7 @@ class DonationsViewController: UIViewController {
     }
     
     @IBAction func onClickDonator(_ sender: Any) {
-        dataSource = ["Normal", "Padrino"]
+        dataSource = ["Normal", "Recurrente"]
         currentBtn = btnDonatorType
         addTransparentView(frames: btnDonatorType.frame)
     }
