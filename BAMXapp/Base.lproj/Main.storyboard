@@ -1331,7 +1331,7 @@
             </objects>
             <point key="canvasLocation" x="3538" y="1633"/>
         </scene>
-        <!--View Controller-->
+        <!--Notificaciones-->
         <scene sceneID="a3J-rd-yg8">
             <objects>
                 <viewController id="IOQ-tr-4TJ" sceneMemberID="viewController">
@@ -1341,7 +1341,7 @@
                         <viewLayoutGuide key="safeArea" id="fw6-Oz-iUe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vgL-5f-L7L"/>
+                    <navigationItem key="navigationItem" title="Notificaciones" id="vgL-5f-L7L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSg-wn-C8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
