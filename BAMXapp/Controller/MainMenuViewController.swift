@@ -182,7 +182,7 @@ extension MainMenuViewController {
         let event = events[index]
         
         if let vc = storyboard?.instantiateViewController(identifier: "EventDetail") as? EventDetailViewController {
-                print(index)
+                vc.event = event
                 vc.loadImgView.load(url: URL(string: event.imgURL)!)
                 
                 vc.titleStr = event.title
@@ -208,7 +208,7 @@ extension MainMenuViewController {
                         }
                     }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
                 self.present(vc, animated: true, completion: nil)
             }
             //present(vc, animated: true, completion: nil)
