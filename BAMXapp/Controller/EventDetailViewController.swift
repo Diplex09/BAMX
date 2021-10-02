@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import EventKit
 
 class EventDetailViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class EventDetailViewController: UIViewController {
     
     var latitude: Double = 0.0
     var longitude: Double = 0.0
+    
+    let eventStore : EKEventStore = EKEventStore()
 
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
@@ -48,6 +51,46 @@ class EventDetailViewController: UIViewController {
     //TODO: Add event to iOS Calendar
     @IBAction func didTapAddToCalendar(_ sender: Any) {
         print("adding to calendar...")
+        var flag = false
+        eventStore.requestAccess(to: .event) { (granted, error) in
+          
+          if (granted) && (error == nil) {
+              print("granted \(granted)")
+            print("error \(String(describing: error))")
+              
+            let calendarEvent:EKEvent = EKEvent(eventStore: self.eventStore)
+              
+            calendarEvent.title = "BAMX: " + self.event.title
+            calendarEvent.startDate = self.event.date
+            calendarEvent.endDate = Calendar.current.date(byAdding: .hour, value: 1, to: self.event.date)
+            calendarEvent.notes = "Evento del Banco de Alimentos de Guadalajara\n\n" + self.event.description!
+            calendarEvent.calendar = self.eventStore.defaultCalendarForNewEvents
+              do {
+                try self.eventStore.save(calendarEvent, span: .thisEvent)
+                    flag = true
+              } catch let error as NSError {
+                  print("failed to save event with error : \(error)")
+              }
+              print("Saved Event")
+                
+          }
+          else{
+          
+              print("failed to save event with error : \(error) or access not granted")
+          }
+        }
+        
+        if(flag)
+        {
+            let alert = UIAlertController(
+                title: "Evento añadido",
+                message:  "El evento ha sido añadido a tu calendario ¡Nos vemos pronto!", // error?.localizedDescription,
+                preferredStyle: .alert
+            )
+        
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapShowDirections(_ sender: Any) {

@@ -182,7 +182,8 @@ extension MainMenuViewController {
         let event = events[index]
         
         if let vc = storyboard?.instantiateViewController(identifier: "EventDetail") as? EventDetailViewController {
-                print(index)
+                vc.event = event
+                
                 vc.loadImgView.load(url: URL(string: event.imgURL)!)
                 
                 vc.titleStr = event.title
@@ -231,11 +232,11 @@ extension MainMenuViewController {
         imgView.clipsToBounds = true
         imgView.cornerRadius = 20
         
-        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 10))
+        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height + 12))
         titleLbl.text = event.title
         titleLbl.font = UIFont(name: "Lato-Bold", size: 18)
         
-        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 1))
+        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height + 20))
         let dateFormatter = DateFormatter()
         
         dateFormatter.locale = Locale(identifier: "es_MX")
