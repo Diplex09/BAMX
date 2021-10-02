@@ -228,8 +228,13 @@ extension MainMenuViewController {
         let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 60))
         imgView.load(url: URL(string: event.imgURL)!)
         imgView.contentMode = .scaleAspectFill
-        imgView.clipsToBounds = true
         imgView.cornerRadius = 20
+        
+        let maskView = UIView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
+        maskView.backgroundColor = .blue
+        maskView.layer.cornerRadius = 20
+        maskView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        imgView.mask = maskView
         
         let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 10))
         titleLbl.text = event.title
