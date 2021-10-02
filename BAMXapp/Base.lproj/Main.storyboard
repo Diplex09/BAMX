@@ -1216,7 +1216,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ae5-Fq-6wU">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rewardCell" id="ae5-Fq-6wU" customClass="RewardCollectionViewCell" customModule="BAMXapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bOC-fz-5mc">
@@ -1229,6 +1229,9 @@
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="rewardImgView" destination="D1Q-7d-G51" id="9P7-pm-UUU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -1270,6 +1273,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="SpecialReward" destination="MUb-Lz-hr7" id="Bmf-e6-MQy"/>
+                        <outlet property="rewardsCollectionView" destination="4g2-yo-Yeb" id="z5j-Kz-wlI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWE-Mj-EZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1296,10 +1300,10 @@
         <!--Navigation Controller-->
         <scene sceneID="xzx-Hc-Rbo">
             <objects>
-                <navigationController id="Snd-X2-88N" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="Snd-X2-88N" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="reward-icon" id="XCx-ji-09Q"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tee-xs-1NV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
