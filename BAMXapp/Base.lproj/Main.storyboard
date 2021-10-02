@@ -94,7 +94,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akh-wP-MHC"/>
-                                    <segue destination="Li1-tx-KQS" kind="presentation" identifier="loginToMainMenu" modalPresentationStyle="fullScreen" id="QJh-HD-gIY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-To-7Et">
@@ -592,7 +591,7 @@
         <!--Custom Tab Bar View Controller-->
         <scene sceneID="yAa-1f-puM">
             <objects>
-                <tabBarController id="Li1-tx-KQS" customClass="CustomTabBarViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="NavTabBarVC" id="Li1-tx-KQS" customClass="CustomTabBarViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sai-fg-UgM" customClass="TabBarViewController" customModule="BAMXapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
