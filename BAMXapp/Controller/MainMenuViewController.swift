@@ -47,6 +47,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         eventCardsView.type = .linear
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
+            print("Reload cards...")
             self.eventCardsView.reloadData()
         }
         
@@ -189,9 +190,9 @@ extension MainMenuViewController {
                 
                 let dateFormatter = DateFormatter()
                 dateFormatter.locale = Locale(identifier: "es_MX")
-                dateFormatter.dateFormat = "EEE, d, MMMM, y  HH:mm" //dia sem (Lun), dia, mes, año, hora::min
-                //checar formato, pero creo q esta bien...
+                dateFormatter.dateFormat = "EEEE MMMM d, y  hh:mm a" //dia sem (Lun), dia, mes, año, hora:min (am/pm)
                 vc.dateStr = dateFormatter.string(from: event.date)
+                vc.dateStr.capitalizeFirstLetter()
                 
                 let latitude = event.place.latitude
                 let longitude = event.place.longitude
@@ -206,6 +207,7 @@ extension MainMenuViewController {
                             vc.placeStr = self.parseAddress(place)
                         }
                     }
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
                 self.present(vc, animated: true, completion: nil)
             }
@@ -220,30 +222,27 @@ extension MainMenuViewController {
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let tempView = UIView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height))
         
-        
-        /*let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapCard(_:)))
-        tempView.addGestureRecognizer(tapGestureRecognizer)*/
-        
-        
         let event = self.events[index]
         // TODO: fix sizes
         
-        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 80))
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 60))
         imgView.load(url: URL(string: event.imgURL)!)
+        imgView.contentMode = .scaleAspectFill
+        imgView.clipsToBounds = true
         imgView.cornerRadius = 20
-        imgView.contentMode = .scaleAspectFit
         
-        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 50))
+        let titleLbl = UILabel(frame: CGRect(x: 20, y: 70, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 10))
         titleLbl.text = event.title
         titleLbl.font = UIFont(name: "Lato-Bold", size: 18)
         
-        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 30))
+        let dateLbl = UILabel(frame: CGRect(x: 20, y: 90, width: eventCardsView.frame.width, height: eventCardsView.frame.height - 1))
         let dateFormatter = DateFormatter()
         
         dateFormatter.locale = Locale(identifier: "es_MX")
-        dateFormatter.dateFormat = "EEE, d, MMMM, y  HH:mm" //dia sem (Lun), dia, mes, año, hora::min
-        //checar formato, pero creo q esta bien...
+        dateFormatter.dateFormat = "EEE MMMM d, y  hh:mm a" //dia sem (Lunes) dia de mes, año hora:min (am/pm)
+        
         dateLbl.text = dateFormatter.string(from: event.date)
+        dateLbl.text?.capitalizeFirstLetter() 
         dateLbl.font = UIFont(name: "Lato-Regular", size: 14)
         dateLbl.textColor = .gray
         
