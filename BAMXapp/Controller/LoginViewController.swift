@@ -80,10 +80,11 @@ class LoginViewController: UIViewController
         
         //Start login code
         Auth.auth().signIn(withEmail: email, password: password){ user, error in
-            if let error = error, user == nil {
+            if (error != nil) || (user == nil) {
+                
                 let alert = UIAlertController(
                     title: "Error al iniciar sesión :(",
-                    message: error.localizedDescription,
+                    message:  "Ingresa tus datos de nuevo", // error?.localizedDescription,
                     preferredStyle: .alert
                 )
                 
@@ -95,6 +96,9 @@ class LoginViewController: UIViewController
                 let em = u?.email ?? " "
                 let name = u?.displayName ?? " "
                 print("Ha ingresado: " + name + " email: " + em)
+                let vc = self.navigationController?.storyboard?.instantiateViewController(withIdentifier:  "NavTabBarVC") as? CustomTabBarViewController
+                vc!.modalPresentationStyle = .fullScreen
+                self.present(vc!, animated: true, completion: nil)
             }
         }
     }
