@@ -35,6 +35,7 @@ class EventDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         imgView.image = loadImgView.image
+        imgView.contentMode = .scaleAspectFill
         titleLbl.text = titleStr
         descLbl.text = desc
         dateLbl.text = dateStr

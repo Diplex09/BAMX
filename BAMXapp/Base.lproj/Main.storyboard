@@ -1263,117 +1263,163 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JnI-L2-sFG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="295"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="j10-yc-LL2"/>
+                                    <constraint firstAttribute="height" constant="295" id="JEi-iI-20S"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EVENTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iga-8i-r9e">
-                                <rect key="frame" x="36" y="328" width="63" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iga-8i-r9e">
+                                <rect key="frame" x="35" y="320" width="344" height="17"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <color key="textColor" name="bamx-red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4h-GN-4em">
-                                <rect key="frame" x="36" y="363" width="341" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="341" id="n3E-CC-7Af"/>
-                                </constraints>
+                                <rect key="frame" x="35" y="352" width="344" height="36"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By Banco de Alimentos de Guadalajara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-BN-Jug">
-                                <rect key="frame" x="36" y="407" width="202" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Banco de Alimentos de Guadalajara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-BN-Jug">
+                                <rect key="frame" x="35" y="393" width="344" height="14.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-hy-bJ4">
-                                <rect key="frame" x="106" y="566" width="234" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-mY-csw">
+                                <rect key="frame" x="35" y="412.5" width="344" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ZIs-Uc-exw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-mY-csw">
-                                <rect key="frame" x="36" y="441" width="341" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-Wn-MsO">
-                                <rect key="frame" x="48" y="564" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-Vv-hQU">
-                                <rect key="frame" x="48" y="649" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-gi-mYh">
-                                <rect key="frame" x="37" y="729" width="122" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bamx-red"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
-                                <state key="normal" title="Donar">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-N0-2JA">
-                                <rect key="frame" x="256" y="729" width="122" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bamx-green"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
-                                <state key="normal" title="Participar">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="place" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-eA-0do">
-                                <rect key="frame" x="106" y="652" width="234" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-ma-XP6">
-                                <rect key="frame" x="106" y="605" width="104" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                <state key="normal" title="Añadir a Calendario">
-                                    <color key="titleColor" name="bamx-red"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapAddToCalendar:" destination="VHP-MN-cqA" eventType="touchUpInside" id="zFI-9B-9C4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-dS-c9j">
-                                <rect key="frame" x="106" y="676" width="147" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                <state key="normal" title="Mostrar ruta en Apple Maps">
-                                    <color key="titleColor" name="bamx-red"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapShowDirections:" destination="VHP-MN-cqA" eventType="touchUpInside" id="dAb-Y9-TnA"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUq-MZ-qQG">
+                                <rect key="frame" x="70" y="512.5" width="200" height="41.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-Wn-MsO">
+                                        <rect key="frame" x="0.0" y="1" width="31" height="22.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Aq2-Jo-0Hx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n7d-cQ-2cz">
+                                        <rect key="frame" x="41" y="0.0" width="159" height="41.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-hy-bJ4">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-ma-XP6">
+                                                <rect key="frame" x="0.0" y="14.5" width="159" height="27"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <state key="normal" title="Añadir a Calendario">
+                                                    <color key="titleColor" name="bamx-red"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapAddToCalendar:" destination="VHP-MN-cqA" eventType="touchUpInside" id="zFI-9B-9C4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LeA-sQ-FPU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-Xn-gx9">
+                                <rect key="frame" x="70" y="569" width="200" height="41.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-Vv-hQU">
+                                        <rect key="frame" x="0.0" y="-0.5" width="36.5" height="25.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Bzy-L2-l43"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2ae-iV-XWv">
+                                        <rect key="frame" x="46.5" y="0.0" width="153.5" height="41.5"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-eA-0do">
+                                                <rect key="frame" x="0.0" y="0.0" width="153.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-dS-c9j">
+                                                <rect key="frame" x="0.0" y="14.5" width="153.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <state key="normal" title="Abrir en Maps">
+                                                    <color key="titleColor" name="bamx-red"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapShowDirections:" destination="VHP-MN-cqA" eventType="touchUpInside" id="dAb-Y9-TnA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UJK-2j-Lnk"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-am-aTA">
+                                <rect key="frame" x="45" y="650.5" width="324" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-gi-mYh">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="45"/>
+                                        <color key="backgroundColor" name="bamx-red"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                        <state key="normal" title="Donar">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-N0-2JA">
+                                        <rect key="frame" x="177" y="0.0" width="147" height="45"/>
+                                        <color key="backgroundColor" name="bamx-yellow"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                        <state key="normal" title="Participar">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7lo-Jk-hR9"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jlP-p1-f48"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jlP-p1-f48" firstAttribute="bottom" secondItem="JnI-L2-sFG" secondAttribute="bottom" constant="518" id="boH-cY-8ie"/>
-                            <constraint firstItem="p4h-GN-4em" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="36" id="dva-OB-xWo"/>
-                            <constraint firstItem="p4h-GN-4em" firstAttribute="top" secondItem="JnI-L2-sFG" secondAttribute="bottom" constant="68" id="f2q-o7-j6g"/>
-                            <constraint firstItem="jlP-p1-f48" firstAttribute="top" secondItem="JnI-L2-sFG" secondAttribute="top" constant="44" id="l8B-mC-TMb"/>
-                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="JnI-L2-sFG" secondAttribute="trailing" id="pjP-Ha-QUa"/>
+                            <constraint firstItem="Oun-BN-Jug" firstAttribute="top" secondItem="p4h-GN-4em" secondAttribute="bottom" constant="5" id="3Mm-MR-IRT"/>
+                            <constraint firstItem="tgl-mY-csw" firstAttribute="top" secondItem="Oun-BN-Jug" secondAttribute="bottom" constant="5" id="56u-HV-JZg"/>
+                            <constraint firstItem="JnI-L2-sFG" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" id="7cD-OA-Lpb"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="tgl-mY-csw" secondAttribute="trailing" constant="35" id="8Ng-l7-DZq"/>
+                            <constraint firstItem="iga-8i-r9e" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="35" id="9tA-n6-oTM"/>
+                            <constraint firstItem="p4h-GN-4em" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="35" id="Aax-eD-d9o"/>
+                            <constraint firstItem="oUq-MZ-qQG" firstAttribute="top" secondItem="tgl-mY-csw" secondAttribute="bottom" constant="25" id="CTj-8e-Pz3"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="p4h-GN-4em" secondAttribute="trailing" constant="35" id="FbE-2a-60U"/>
+                            <constraint firstItem="Mab-Xn-gx9" firstAttribute="top" secondItem="oUq-MZ-qQG" secondAttribute="bottom" constant="15" id="StL-Yw-1iK"/>
+                            <constraint firstItem="JnI-L2-sFG" firstAttribute="top" secondItem="fs9-ye-OgS" secondAttribute="top" id="Y0D-Pw-cmt"/>
+                            <constraint firstItem="Mab-Xn-gx9" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="70" id="dXE-ia-9P5"/>
+                            <constraint firstItem="MGd-am-aTA" firstAttribute="top" secondItem="Mab-Xn-gx9" secondAttribute="bottom" constant="40" id="dlH-Bd-1L2"/>
+                            <constraint firstItem="iga-8i-r9e" firstAttribute="top" secondItem="JnI-L2-sFG" secondAttribute="bottom" constant="25" id="f2n-pk-C0U"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="MGd-am-aTA" secondAttribute="trailing" constant="45" id="ghC-gk-44C"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="iga-8i-r9e" secondAttribute="trailing" constant="35" id="hc0-KL-dMa"/>
+                            <constraint firstItem="tgl-mY-csw" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="35" id="isO-c5-8ek"/>
+                            <constraint firstItem="jlP-p1-f48" firstAttribute="trailing" secondItem="Oun-BN-Jug" secondAttribute="trailing" constant="35" id="jzY-yy-XhQ"/>
+                            <constraint firstItem="MGd-am-aTA" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="45" id="kdA-7g-RPh"/>
+                            <constraint firstItem="p4h-GN-4em" firstAttribute="top" secondItem="iga-8i-r9e" secondAttribute="bottom" constant="15" id="mb2-2q-mUX"/>
+                            <constraint firstItem="oUq-MZ-qQG" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="70" id="pUb-o8-0SD"/>
+                            <constraint firstItem="JnI-L2-sFG" firstAttribute="trailing" secondItem="jlP-p1-f48" secondAttribute="trailing" id="rtx-I1-bOt"/>
+                            <constraint firstItem="Oun-BN-Jug" firstAttribute="leading" secondItem="jlP-p1-f48" secondAttribute="leading" constant="35" id="uIY-zy-IJk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cf2-nh-Kbx"/>
@@ -1410,11 +1456,11 @@
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="profile-icon" width="20" height="26"/>
         <image name="reward-icon" width="27" height="28"/>
-        <namedColor name="bamx-green">
-            <color red="0.057000000029802322" green="0.5910000205039978" blue="0.22800000011920929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="bamx-red">
             <color red="0.99699997901916504" green="0.14599999785423279" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bamx-yellow">
+            <color red="0.9570000171661377" green="0.65399998426437378" blue="0.0030000000260770321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
