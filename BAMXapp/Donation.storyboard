@@ -451,6 +451,14 @@
                                         <state key="normal" title="     Proteína animal              $200.00  ">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButtonColorEquivalentWithSender:" destination="FuY-LO-z2p" eventType="touchUpInside" id="Yao-qf-eVO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-5N-zHf">
                                         <rect key="frame" x="2" y="45" width="247" height="30"/>
@@ -458,6 +466,14 @@
                                         <state key="normal" title="     Vegetales                        $150.00  ">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButtonColorEquivalentWithSender:" destination="FuY-LO-z2p" eventType="touchUpInside" id="LgI-ec-hLO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-pl-VG1">
                                         <rect key="frame" x="2" y="90" width="247" height="30"/>
@@ -465,6 +481,14 @@
                                         <state key="normal" title="     Frutas                              $100.00  ">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButtonColorEquivalentWithSender:" destination="FuY-LO-z2p" eventType="touchUpInside" id="oPJ-MQ-1nR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNc-Ew-5sp">
                                         <rect key="frame" x="1" y="135" width="249" height="30"/>
@@ -472,6 +496,14 @@
                                         <state key="normal" title="     Cereales                            $80.00  ">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButtonColorEquivalentWithSender:" destination="FuY-LO-z2p" eventType="touchUpInside" id="zdk-Xy-2gu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-0r-nam">
                                         <rect key="frame" x="0.0" y="180" width="251" height="30"/>
@@ -479,6 +511,14 @@
                                         <state key="normal" title="     Lacteos                              $50.00  ">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButtonColorEquivalentWithSender:" destination="FuY-LO-z2p" eventType="touchUpInside" id="UAn-zk-CsA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -489,6 +529,13 @@
                             <constraint firstItem="0f7-sm-aHx" firstAttribute="centerX" secondItem="ia0-G7-lIr" secondAttribute="centerX" id="pwd-22-tQs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="WJo-ZM-aXf" id="UGs-xW-4Ji"/>
+                        <outlet property="btn2" destination="EoU-5N-zHf" id="j32-Dc-eKU"/>
+                        <outlet property="btn3" destination="oU1-pl-VG1" id="nUe-eF-PdP"/>
+                        <outlet property="btn4" destination="UNc-Ew-5sp" id="KC6-cV-5Mc"/>
+                        <outlet property="btn5" destination="DEi-0r-nam" id="wy7-1U-Dgb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G65-DO-GJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
