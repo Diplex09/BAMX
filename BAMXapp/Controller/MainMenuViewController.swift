@@ -46,7 +46,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         // Do any additional setup after loading the view.
         eventCardsView.type = .linear
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7 ) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 ) {
             print("Reload cards...")
             self.eventCardsView.reloadData()
         }
