@@ -27,6 +27,12 @@ class ProfileViewController : UIViewController{
         present(vc, animated: true)
     }
     
+    @IBAction func didTapChangeProfile(){
+        let cvc = storyboard?.instantiateViewController(identifier: "profile_changer_vc") as! ProfileChangerViewController
+        present(cvc, animated: true)
+    }
+    
+    
 }
 
 extension ProfileViewController: UICollectionViewDataSource{
