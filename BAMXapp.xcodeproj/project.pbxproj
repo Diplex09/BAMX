@@ -11,6 +11,7 @@
 		6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656286C27039926003BB3F8 /* UIImageViewExtension.swift */; };
 		6656286F27053D6C003BB3F8 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656286E27053D6B003BB3F8 /* EventDetailViewController.swift */; };
 		668519D82707D66500AA8A51 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668519D72707D66500AA8A51 /* StringExtension.swift */; };
+		66914623271F8CEC00253402 /* DonateLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66914622271F8CEC00253402 /* DonateLocationViewController.swift */; };
 		66F3C29E2707F36800C0178E /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3C29D2707F36800C0178E /* Reward.swift */; };
 		66F3C2A02707F4C000C0178E /* RewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3C29F2707F4C000C0178E /* RewardCollectionViewCell.swift */; };
 		9202AADF26EB9F8A00B3A98C /* Donation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9202AADE26EB9F8A00B3A98C /* Donation.storyboard */; };
@@ -87,6 +88,7 @@
 		6656286C27039926003BB3F8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		6656286E27053D6B003BB3F8 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		668519D72707D66500AA8A51 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		66914622271F8CEC00253402 /* DonateLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateLocationViewController.swift; sourceTree = "<group>"; };
 		66F3C29D2707F36800C0178E /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		66F3C29F2707F4C000C0178E /* RewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCollectionViewCell.swift; sourceTree = "<group>"; };
 		9202AADE26EB9F8A00B3A98C /* Donation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Donation.storyboard; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				66F3C29F2707F4C000C0178E /* RewardCollectionViewCell.swift */,
 				990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */,
 				990A249B271F14D000B234F5 /* ProfileChangerViewController.swift */,
+				66914622271F8CEC00253402 /* DonateLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */,
+				66914623271F8CEC00253402 /* DonateLocationViewController.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
 				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
