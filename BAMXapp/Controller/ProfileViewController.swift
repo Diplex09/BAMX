@@ -12,7 +12,6 @@ class ProfileViewController : UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     var profileRecords = ProfileRecord.fetchProfileRecords()
     
-    
 
 
 
@@ -21,6 +20,11 @@ class ProfileViewController : UIViewController{
         
         collectionView.dataSource = self
 
+    }
+    
+    @IBAction func didTapChangePassword(){
+        let vc = storyboard?.instantiateViewController(identifier: "password_editor_vc") as! PasswordEditorViewController
+        present(vc, animated: true)
     }
     
 }

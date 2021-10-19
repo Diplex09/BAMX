@@ -1005,6 +1005,9 @@
                                 <state key="normal" title="Cambiar contraseña" image="play" catalog="system">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapChangePassword" destination="L3r-Q6-Lvc" eventType="touchUpInside" id="n8l-le-wAR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auv-Zj-F6C">
                                 <rect key="frame" x="38" y="643" width="136.5" height="22"/>
@@ -1069,10 +1072,10 @@
             </objects>
             <point key="canvasLocation" x="4337.68115942029" y="2334.375"/>
         </scene>
-        <!--Password Editor-->
+        <!--Password Editor View Controller-->
         <scene sceneID="Mlx-B0-ROi">
             <objects>
-                <viewController id="BAm-K6-BeR" customClass="PasswordEditor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="password_editor_vc" id="BAm-K6-BeR" customClass="PasswordEditorViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vhx-z4-kqV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1395,23 +1398,23 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iga-8i-r9e">
-                                <rect key="frame" x="35" y="320" width="344" height="17"/>
+                                <rect key="frame" x="35" y="320" width="344" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <color key="textColor" name="bamx-red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4h-GN-4em">
-                                <rect key="frame" x="35" y="352" width="344" height="36"/>
+                                <rect key="frame" x="35" y="351.5" width="344" height="35"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Banco de Alimentos de Guadalajara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-BN-Jug">
-                                <rect key="frame" x="35" y="393" width="344" height="14.5"/>
+                                <rect key="frame" x="35" y="391.5" width="344" height="14"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-mY-csw">
-                                <rect key="frame" x="35" y="412.5" width="344" height="75"/>
+                                <rect key="frame" x="35" y="410.5" width="344" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="ZIs-Uc-exw"/>
                                 </constraints>
@@ -1419,25 +1422,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUq-MZ-qQG">
-                                <rect key="frame" x="70" y="512.5" width="200" height="41.5"/>
+                                <rect key="frame" x="70" y="510.5" width="200" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-Wn-MsO">
-                                        <rect key="frame" x="0.0" y="1" width="31" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="1" width="30.5" height="22.5"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Aq2-Jo-0Hx"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n7d-cQ-2cz">
-                                        <rect key="frame" x="41" y="0.0" width="159" height="41.5"/>
+                                        <rect key="frame" x="40.5" y="0.0" width="159.5" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-hy-bJ4">
-                                                <rect key="frame" x="0.0" y="0.0" width="159" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="14"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-ma-XP6">
-                                                <rect key="frame" x="0.0" y="14.5" width="159" height="27"/>
+                                                <rect key="frame" x="0.0" y="14" width="159.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                 <state key="normal" title="Añadir a Calendario">
                                                     <color key="titleColor" name="bamx-red"/>
@@ -1454,7 +1457,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-am-aTA">
-                                <rect key="frame" x="45" y="650.5" width="324" height="45"/>
+                                <rect key="frame" x="45" y="645.5" width="324" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-gi-mYh">
                                         <rect key="frame" x="0.0" y="0.0" width="147" height="45"/>
@@ -1488,25 +1491,25 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-Xn-gx9">
-                                <rect key="frame" x="66" y="569" width="200" height="41.5"/>
+                                <rect key="frame" x="66" y="565.5" width="200" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-Vv-hQU">
-                                        <rect key="frame" x="0.0" y="-0.5" width="36.5" height="25.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="36" height="25.5"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Bzy-L2-l43"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2ae-iV-XWv">
-                                        <rect key="frame" x="46.5" y="0.0" width="153.5" height="41.5"/>
+                                        <rect key="frame" x="46" y="0.0" width="154" height="40"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-eA-0do">
-                                                <rect key="frame" x="0.0" y="0.0" width="153.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="14"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-dS-c9j">
-                                                <rect key="frame" x="0.0" y="14.5" width="153.5" height="27"/>
+                                                <rect key="frame" x="0.0" y="14" width="154" height="26"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                 <state key="normal" title="Abrir en Maps">
                                                     <color key="titleColor" name="bamx-red"/>

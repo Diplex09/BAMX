@@ -52,6 +52,7 @@
 		92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AAC26E3F584008290EA /* FoodDonation.swift */; };
 		92C70AB326E3F61D008290EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C70AB226E3F61D008290EA /* Item.swift */; };
 		92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBEE8526E87880008F52CA /* SignUpViewController.swift */; };
+		990A2498271F0D8100B234F5 /* PasswordEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */; };
 		99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */; };
 		99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DFE26EAF4A700B20416 /* ProfileRecord.swift */; };
 		99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E5365E26E977B2004E06C5 /* ProfileViewController.swift */; };
@@ -132,6 +133,7 @@
 		92C70AAC26E3F584008290EA /* FoodDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDonation.swift; sourceTree = "<group>"; };
 		92C70AB226E3F61D008290EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		92DBEE8526E87880008F52CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEditorViewController.swift; sourceTree = "<group>"; };
 		99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		99866DFE26EAF4A700B20416 /* ProfileRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRecord.swift; sourceTree = "<group>"; };
 		99E5365E26E977B2004E06C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */,
 				6656286E27053D6B003BB3F8 /* EventDetailViewController.swift */,
 				66F3C29F2707F4C000C0178E /* RewardCollectionViewCell.swift */,
+				990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
 				99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */,
 				668519D82707D66500AA8A51 /* StringExtension.swift in Sources */,
+				990A2498271F0D8100B234F5 /* PasswordEditorViewController.swift in Sources */,
 				9299829526E3E93F008E8285 /* AppDelegate.swift in Sources */,
 				92AC86CE26E437C900512F9F /* LoginViewController.swift in Sources */,
 				BDC5C33B270665A100581EA3 /* UserDefaultExtension.swift in Sources */,
