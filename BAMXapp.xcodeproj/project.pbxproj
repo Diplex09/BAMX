@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */; };
+		1293A1DF271F83E00067421E /* BranchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1293A1DE271F83E00067421E /* BranchMapViewController.swift */; };
 		6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656286C27039926003BB3F8 /* UIImageViewExtension.swift */; };
 		6656286F27053D6C003BB3F8 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656286E27053D6B003BB3F8 /* EventDetailViewController.swift */; };
 		668519D82707D66500AA8A51 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668519D72707D66500AA8A51 /* StringExtension.swift */; };
@@ -82,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		1293A1DE271F83E00067421E /* BranchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchMapViewController.swift; sourceTree = "<group>"; };
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
 		64B56D6D312AC73174125C72 /* Pods-BAMXapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.debug.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.debug.xcconfig"; sourceTree = "<group>"; };
 		6656286C27039926003BB3F8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				66F3C29F2707F4C000C0178E /* RewardCollectionViewCell.swift */,
 				990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */,
 				990A249B271F14D000B234F5 /* ProfileChangerViewController.swift */,
+				1293A1DE271F83E00067421E /* BranchMapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */,
 				9299829F26E3E93F008E8285 /* BAMXapp.xcdatamodeld in Sources */,
+				1293A1DF271F83E00067421E /* BranchMapViewController.swift in Sources */,
 				929AD31D26E91634006A83A7 /* Event.swift in Sources */,
 				92A1C1B126EBB01B00D41DBF /* TabBarViewController.swift in Sources */,
 				99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */,

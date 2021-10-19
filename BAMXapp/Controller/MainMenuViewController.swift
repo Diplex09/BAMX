@@ -18,6 +18,9 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
     
     @IBOutlet weak var eventCardsView: iCarousel!
     @IBOutlet weak var greetLbl: UILabel!
+    @IBOutlet weak var branchMapBtn: UIButton!
+    
+    
     
     let eventList = "cellToEventCard"
     let reference = Database.database().reference(withPath: "events")
@@ -54,6 +57,8 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
     }
+    
+   
     
     func fetch() {
         let completed = reference.observe(.value) { snapshot in
@@ -115,6 +120,8 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         Auth.auth().removeStateDidChangeListener(handle)
     }
     
+    
+    
     func getUserProfile() {
         let user = Auth.auth().currentUser
         if user != nil {
@@ -131,6 +138,11 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         print(shortName[0])
         greetLbl.text = "Hola, " + shortName[0]
     }
+    
+    @IBAction func findBranchDidTouch(_ sender: Any) {
+        let branchMapView = (storyboard?.instantiateViewController(identifier: "branchmap"))!
+        present(branchMapView, animated: true, completion: nil)
+               }
     
 }
 
