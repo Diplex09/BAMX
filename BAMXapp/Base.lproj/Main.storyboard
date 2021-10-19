@@ -1012,32 +1012,18 @@
                                     <action selector="didTapChangePassword" destination="L3r-Q6-Lvc" eventType="touchUpInside" id="n8l-le-wAR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auv-Zj-F6C">
-                                <rect key="frame" x="38" y="643" width="167" height="22"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="      Notificaciones" image="bell" catalog="system">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajustes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oup-on-sFm">
                                 <rect key="frame" x="38" y="79" width="265" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKc-It-yKZ">
-                                <rect key="frame" x="293" y="639.5" width="49" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="Kyg-zX-9Fo"/>
-                                </constraints>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="23S-vd-EL7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ApH-5i-het" firstAttribute="top" secondItem="ML5-2K-DaK" secondAttribute="bottom" constant="218" id="0hA-m4-LoT"/>
                             <constraint firstItem="ApH-5i-het" firstAttribute="leading" secondItem="33E-yk-3Bh" secondAttribute="leading" id="1Ko-VK-LbT"/>
-                            <constraint firstItem="23S-vd-EL7" firstAttribute="trailing" secondItem="qKc-It-yKZ" secondAttribute="trailing" constant="74" id="2F2-1q-TiQ"/>
                             <constraint firstItem="swm-O0-ea0" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="3By-Cl-QpN"/>
                             <constraint firstItem="g7O-BW-joe" firstAttribute="firstBaseline" secondItem="swm-O0-ea0" secondAttribute="baseline" constant="30.5" symbolType="layoutAnchor" id="4Bk-cS-1qX"/>
                             <constraint firstItem="23S-vd-EL7" firstAttribute="trailing" secondItem="ApH-5i-het" secondAttribute="trailing" constant="217" id="4ne-qH-7dK"/>
@@ -1045,8 +1031,6 @@
                             <constraint firstItem="yFa-6f-eKg" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" id="56D-0A-x5f"/>
                             <constraint firstItem="yFa-6f-eKg" firstAttribute="top" secondItem="2Dc-Kr-BsK" secondAttribute="top" id="5iY-Gl-FIW"/>
                             <constraint firstItem="YVo-cT-LNp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="23S-vd-EL7" secondAttribute="leading" id="As9-Ah-8wc"/>
-                            <constraint firstItem="auv-Zj-F6C" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="BGC-01-s41"/>
-                            <constraint firstItem="qKc-It-yKZ" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="293" id="BNc-Km-hZ2"/>
                             <constraint firstItem="yFa-6f-eKg" firstAttribute="trailing" secondItem="23S-vd-EL7" secondAttribute="trailing" id="Eg5-7P-oNG"/>
                             <constraint firstItem="swm-O0-ea0" firstAttribute="top" secondItem="2Dc-Kr-BsK" secondAttribute="topMargin" constant="94" id="IaD-N5-oe8"/>
                             <constraint firstItem="ML5-2K-DaK" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="NPG-Ya-tBc"/>
@@ -1057,7 +1041,6 @@
                             <constraint firstItem="50S-Ge-xpa" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="XMb-C0-uUg"/>
                             <constraint firstItem="g7O-BW-joe" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="XPx-zd-HPL"/>
                             <constraint firstItem="ApH-5i-het" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="23S-vd-EL7" secondAttribute="leading" id="Xoj-6p-yIz"/>
-                            <constraint firstItem="qKc-It-yKZ" firstAttribute="firstBaseline" secondItem="auv-Zj-F6C" secondAttribute="firstBaseline" constant="-21" id="YEL-Dx-YE0"/>
                             <constraint firstItem="33E-yk-3Bh" firstAttribute="top" secondItem="23S-vd-EL7" secondAttribute="top" constant="313" id="Z2S-r9-72p"/>
                             <constraint firstItem="50S-Ge-xpa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="23S-vd-EL7" secondAttribute="leading" id="ZTz-Y0-Pek"/>
                             <constraint firstItem="YVo-cT-LNp" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="aAN-mx-pKz"/>
@@ -1066,10 +1049,8 @@
                             <constraint firstItem="ML5-2K-DaK" firstAttribute="top" secondItem="g7O-BW-joe" secondAttribute="bottom" constant="8.5" id="dLu-oF-EwB"/>
                             <constraint firstItem="Oup-on-sFm" firstAttribute="top" secondItem="23S-vd-EL7" secondAttribute="top" constant="35" id="erh-xo-ELt"/>
                             <constraint firstItem="23S-vd-EL7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g7O-BW-joe" secondAttribute="trailing" symbolic="YES" id="gpf-l8-6hb"/>
-                            <constraint firstItem="auv-Zj-F6C" firstAttribute="top" secondItem="50S-Ge-xpa" secondAttribute="bottom" constant="8" symbolic="YES" id="gw2-1c-nQi"/>
                             <constraint firstItem="33E-yk-3Bh" firstAttribute="leading" secondItem="ML5-2K-DaK" secondAttribute="leading" id="hrJ-HC-x7g"/>
                             <constraint firstItem="ML5-2K-DaK" firstAttribute="leading" secondItem="23S-vd-EL7" secondAttribute="leading" constant="38" id="jYq-jM-F6B"/>
-                            <constraint firstItem="auv-Zj-F6C" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="23S-vd-EL7" secondAttribute="leading" id="k9i-57-4a7"/>
                             <constraint firstItem="23S-vd-EL7" firstAttribute="trailing" secondItem="ML5-2K-DaK" secondAttribute="trailing" constant="181" id="toN-TV-vBQ"/>
                             <constraint firstItem="23S-vd-EL7" firstAttribute="bottom" secondItem="33E-yk-3Bh" secondAttribute="bottom" constant="281" id="w4L-eK-hBa"/>
                         </constraints>
@@ -1694,7 +1675,6 @@
         <image name="User" width="53" height="62"/>
         <image name="background-top" width="4688" height="3546"/>
         <image name="bamx-logo" width="176" height="68"/>
-        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="gray-rectangle" width="640" height="640"/>

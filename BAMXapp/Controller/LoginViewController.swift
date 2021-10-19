@@ -42,7 +42,7 @@ class LoginViewController: UIViewController
         content.body = "Look at me!"
         
         // Step 3: Create the notification trigger
-        let date = Date().addingTimeInterval(60)
+        let date = Date().addingTimeInterval(3)
         
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
         
