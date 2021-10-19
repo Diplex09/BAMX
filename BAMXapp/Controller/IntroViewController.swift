@@ -39,8 +39,15 @@ class IntroViewController: UIViewController {
                   IntroSlide(title: "REVISA", description: "Mantente informado de lo que se ha realizado con tu donativo", image: #imageLiteral(resourceName: "badge")),
                   IntroSlide(title: "GRACIAS", description: "La(s) familia(s) que has alimentado te lo agradecen y obtienes recompensas", image: #imageLiteral(resourceName: "trophy"))]
         self.hideKeyboardWhenTappedAround()
+        
+        
+        
+        
+        
+        
     }
     
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
     }
