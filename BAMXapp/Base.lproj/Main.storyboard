@@ -390,27 +390,6 @@
             </objects>
             <point key="canvasLocation" x="1842.0289855072465" y="-676.33928571428567"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="sIN-0d-l4B">
-            <objects>
-                <viewController id="lyB-o8-3Du" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o3e-Iz-Qh2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LTE-lb-39L">
-                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="HpH-tv-1LO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7T1-8g-ePj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4301.449275362319" y="-1134.375"/>
-        </scene>
         <!--Main Menu-->
         <scene sceneID="sES-nJ-lUK">
             <objects>
