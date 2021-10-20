@@ -15,9 +15,9 @@ class BranchMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
     
     let locationManager = CLLocationManager()
     
-    let coords = [
-        CLLocation(latitude: 20.734351, longitude: -103.455281),
-        CLLocation(latitude: 20.656161, longitude: -103.355369)
+    let places =  [
+        Place(latitude: 20.656161, longitude: -103.355369, title: "Banco de Alimentos Guadalajara", address: "Calle Pichónn 147, Morelos, Guadalajara JAL 44910"),
+        Place(latitude: 20.734351, longitude: -103.455281, title: "Tecnológico de Monterrey - Guadalajara Campus", address: "Avenida Ramón Corona 2514, Los Olivos, Zapopan JAL 45207")
     ]
     
     var selectedPin: MKPlacemark? = nil
@@ -27,7 +27,7 @@ class BranchMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         
         mapView.delegate = self
         
-        addAnnotations(coords: coords)
+        addAnnotations(places: places)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,13 +61,57 @@ class BranchMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         mapView.setRegion(region, animated: true)
     }
     
-    func addAnnotations(coords: [CLLocation]){
-        for coord in coords {
-            let CLLCoordType = CLLocationCoordinate2D(latitude: coord.coordinate.latitude,
-                                                      longitude: coord.coordinate.longitude);
-            let marker = MKPointAnnotation();
-            marker.coordinate = CLLCoordType;
-            mapView.addAnnotation(marker);
+    func addAnnotations(places: [Place]){
+        
+        for place in places {
+            let coords = CLLocation(latitude: place.latitude, longitude: place.longitude)
+            
+            let CLLCoordType = CLLocationCoordinate2D(latitude: coords.coordinate.latitude,
+                                                      longitude: coords.coordinate.longitude)
+            
+            let marker = MKPointAnnotation()
+            marker.coordinate = CLLCoordType
+            marker.title = place.title
+            marker.subtitle = place.address
+            
+            self.mapView.addAnnotation(marker);
         }
+    }
+}
+
+extension BranchMapViewController {
+    @objc func getDirections(coords: CLLocationCoordinate2D) {
+        print("Getting directions...")
+        var pm = MKPlacemark(coordinate: coords)
+        let mapItem = MKMapItem(placemark: pm)
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+        mapItem.openInMaps(launchOptions: launchOptions)
+        print("Opening in Maps...")
+        
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            //return nil so map view draws "blue dot" for standard user location
+            return nil
+        }
+        
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        
+        pinView?.tintColor = UIColor(named: "bamx-red")
+        pinView?.canShowCallout = true
+        
+        /*let button = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 60 , height: 50)))
+        
+        button.setBackgroundImage(UIImage(systemName: "car"), for: .normal)
+        
+        button.addTarget(self, action: #selector(self.getDirections), for: .touchUpInside)
+        
+        pinView?.leftCalloutAccessoryView = button*/
+        
+        return pinView
     }
 }
