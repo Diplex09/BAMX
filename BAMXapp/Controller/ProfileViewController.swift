@@ -38,6 +38,11 @@ class ProfileViewController : UIViewController{
         present(cvc, animated: true)
     }
     
+    @IBAction func didTapProgress(){
+        let cvc = storyboard?.instantiateViewController(identifier: "progress_controller") as! ProgressDonationViewController
+        present(cvc, animated: true)
+    }
+    
     func getUserProfile() {
             let user = Auth.auth().currentUser
             if user != nil {
