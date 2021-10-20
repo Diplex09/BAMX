@@ -32,6 +32,7 @@ class ScheduleViewController: UIViewController {
         dateTimePicker.datePickerMode = .dateAndTime
         dateTimePicker.minuteInterval = 30
         dateTimePicker.addTarget(self, action: #selector(handleDateTimePicker), for: UIControl.Event.valueChanged)
+        dateTimePicker.frame.size = CGSize(width: 0, height: 250)
         dateTimePickerField.inputView = dateTimePicker
     }
     
@@ -67,7 +68,7 @@ class ScheduleViewController: UIViewController {
         var count = 0
         
         let completed = reference.observe(.value) { snapshot in
-            count = Int(snapshot.childrenCount)
+            count = Int(snapshot.childrenCount) - 1
         }
         
         referenceObservers.append(completed)
@@ -95,7 +96,7 @@ class ScheduleViewController: UIViewController {
                 print("Data saved successfully!")
                 
                 let alert = UIAlertController(
-                    title: "Recolección agendada!",
+                    title: "¡Recolección agendada!",
                     message: self.dateTimePickerField.text! + " en " + self.placePickerField.text!,
                     preferredStyle: .alert
                 )

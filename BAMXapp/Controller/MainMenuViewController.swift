@@ -146,7 +146,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
     
     @IBAction func scheduleDidTouch(_ sender: Any) {
         let scheduleView = (storyboard?.instantiateViewController(identifier: "schedule"))!
-        scheduleView.modalPresentationStyle = .formSheet
+        scheduleView.modalPresentationStyle = .popover
         present(scheduleView, animated: true, completion: nil)
     }
 }
