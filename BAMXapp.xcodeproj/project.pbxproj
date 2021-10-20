@@ -55,6 +55,7 @@
 		92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBEE8526E87880008F52CA /* SignUpViewController.swift */; };
 		990A2498271F0D8100B234F5 /* PasswordEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */; };
 		990A249C271F14D000B234F5 /* ProfileChangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990A249B271F14D000B234F5 /* ProfileChangerViewController.swift */; };
+		995177AA2720700800301C78 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995177A92720700800301C78 /* Service.swift */; };
 		99866DFA26EADF9600B20416 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */; };
 		99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99866DFE26EAF4A700B20416 /* ProfileRecord.swift */; };
 		99E5365F26E977B2004E06C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E5365E26E977B2004E06C5 /* ProfileViewController.swift */; };
@@ -138,6 +139,7 @@
 		92DBEE8526E87880008F52CA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		990A2497271F0D8100B234F5 /* PasswordEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEditorViewController.swift; sourceTree = "<group>"; };
 		990A249B271F14D000B234F5 /* ProfileChangerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangerViewController.swift; sourceTree = "<group>"; };
+		995177A92720700800301C78 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		99866DF926EADF9600B20416 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		99866DFE26EAF4A700B20416 /* ProfileRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRecord.swift; sourceTree = "<group>"; };
 		99E5365E26E977B2004E06C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				92254EA426E81DA30095DE38 /* UIViewControllerExtension.swift */,
 				6656286C27039926003BB3F8 /* UIImageViewExtension.swift */,
 				668519D72707D66500AA8A51 /* StringExtension.swift */,
+				995177A92720700800301C78 /* Service.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				BDC5C33B270665A100581EA3 /* UserDefaultExtension.swift in Sources */,
 				92C70AB326E3F61D008290EA /* Item.swift in Sources */,
 				99866DFF26EAF4A700B20416 /* ProfileRecord.swift in Sources */,
+				995177AA2720700800301C78 /* Service.swift in Sources */,
 				66F3C2A02707F4C000C0178E /* RewardCollectionViewCell.swift in Sources */,
 				92254EA526E81DA30095DE38 /* UIViewControllerExtension.swift in Sources */,
 				92DBEE8626E87880008F52CA /* SignUpViewController.swift in Sources */,

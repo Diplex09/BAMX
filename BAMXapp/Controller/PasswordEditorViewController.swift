@@ -10,6 +10,8 @@ import Firebase
 
 class PasswordEditorViewController: UIViewController {
     @IBOutlet var currentUser: UILabel!
+    @IBOutlet weak var emailField: UITextField!
+    
     var profileRecords = ProfileRecord.fetchProfileRecords()
     var uid = ""
     var email = ""
@@ -21,6 +23,24 @@ class PasswordEditorViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func changeButton_Tapped(_sender : Any){
+        let auth = Auth.auth()
+        
+        auth.sendPasswordReset(withEmail: emailField.text!) { (error) in
+            if let error = error {
+                let alert = Service.createAlertController(title: "Error", message: error.localizedDescription)
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
+            let alert = Service.createAlertController(title: "Solicitud Aceptada", message: "En unos minutos llegara un mail para cambiar su contraseña")
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
+    
     func getUserProfile() {
             let user = Auth.auth().currentUser
             if user != nil {
@@ -37,6 +57,7 @@ class PasswordEditorViewController: UIViewController {
             print(shortName[0])
         currentUser.text = shortName[0]
         }
+
     
 
    
