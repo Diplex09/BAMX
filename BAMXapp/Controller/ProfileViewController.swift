@@ -6,17 +6,23 @@
 //
 
 import UIKit
+import Firebase
 
 
 class ProfileViewController : UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
-    var profileRecords = ProfileRecord.fetchProfileRecords()
+    @IBOutlet var currentUser: UILabel!
     
+    var profileRecords = ProfileRecord.fetchProfileRecords()
+    var uid = ""
+    var email = ""
+    var name = ""
 
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserProfile()
         
         collectionView.dataSource = self
 
@@ -31,6 +37,23 @@ class ProfileViewController : UIViewController{
         let cvc = storyboard?.instantiateViewController(identifier: "profile_changer_vc") as! ProfileChangerViewController
         present(cvc, animated: true)
     }
+    
+    func getUserProfile() {
+            let user = Auth.auth().currentUser
+            if user != nil {
+              // The user's ID, unique to the Firebase project.
+              // Do NOT use this value to authenticate with your backend server,
+              // if you have one. Use getTokenWithCompletion:completion: instead.
+                uid = user?.uid ?? " "
+                email = user?.email ?? " "
+                name = user?.displayName ?? " "
+            }
+            
+            let delimiter = " "
+            let shortName = name.components(separatedBy: delimiter)
+            print(shortName[0])
+        currentUser.text = shortName[0]
+        }
     
     
 }
