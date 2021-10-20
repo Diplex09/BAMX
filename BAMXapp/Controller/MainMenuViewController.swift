@@ -144,6 +144,11 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         present(branchMapView, animated: true, completion: nil)
                }
     
+    @IBAction func scheduleDidTouch(_ sender: Any) {
+        let scheduleView = (storyboard?.instantiateViewController(identifier: "schedule"))!
+        scheduleView.modalPresentationStyle = .formSheet
+        present(scheduleView, animated: true, completion: nil)
+    }
 }
 
 extension MainMenuViewController {
