@@ -6,24 +6,41 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileChangerViewController: UIViewController {
+    @IBOutlet var currentUser: UILabel!
+    var profileRecords = ProfileRecord.fetchProfileRecords()
+    var uid = ""
+    var email = ""
+    var name = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserProfile()
 
         // Do any additional setup after loading the view.
     }
     
+    func getUserProfile() {
+            let user = Auth.auth().currentUser
+            if user != nil {
+              // The user's ID, unique to the Firebase project.
+              // Do NOT use this value to authenticate with your backend server,
+              // if you have one. Use getTokenWithCompletion:completion: instead.
+                uid = user?.uid ?? " "
+                email = user?.email ?? " "
+                name = user?.displayName ?? " "
+            }
+            
+            let delimiter = " "
+            let shortName = name.components(separatedBy: delimiter)
+            print(shortName[0])
+        currentUser.text = shortName[0]
+        }
+    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
