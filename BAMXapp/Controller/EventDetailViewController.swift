@@ -101,6 +101,12 @@ class EventDetailViewController: UIViewController {
         mapItem.openInMaps(launchOptions: launchOptions)
     }
     
+    @IBAction func didTapParticipate(){
+        let alertMessage = UIAlertController(title: "Solicitud enviada", message: "Estarás recibiendo en unas horas un aviso sobre la disponibilidad del evento", preferredStyle: .alert)
+        alertMessage.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        self.present(alertMessage, animated: true, completion: nil)
+    }
+    
     @IBAction func didTapDonate(_sender: Any){
         let cvc = storyboard?.instantiateViewController(identifier: "NV_ID") as! UINavigationController
         present(cvc, animated: true)

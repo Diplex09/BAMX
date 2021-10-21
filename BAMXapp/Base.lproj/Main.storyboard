@@ -1616,6 +1616,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapParticipate" destination="VHP-MN-cqA" eventType="touchUpInside" id="cmG-KC-DBQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
