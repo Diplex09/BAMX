@@ -11,7 +11,7 @@
         <!--Donations View Controller-->
         <scene sceneID="GlJ-nH-5rU">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7NK-uc-ghG" customClass="DonationsViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="donation_start" modalPresentationStyle="fullScreen" id="7NK-uc-ghG" customClass="DonationsViewController" customModule="BAMXapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZB-pP-tkh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

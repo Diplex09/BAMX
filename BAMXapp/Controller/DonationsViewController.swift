@@ -100,7 +100,7 @@ class DonationsViewController: UIViewController {
     
     
     @IBAction func onClickEvent(_ sender: Any) {
-        dataSource = ["Event 1", "Event 2", "Event 3"]
+        dataSource = ["Comer en Familia", "Donación a casa hogar"]
         currentBtn = btnEventType
         addTransparentView(frames: btnDonatorType.frame)
     }

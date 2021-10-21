@@ -29,12 +29,12 @@ class SignUpViewController: UIViewController {
         
         let loginManager = LoginManager()
         loginManager.logOut()
-        loginManager.logIn(permission: [.], from: self){ (Result)
+        //loginManager.logIn(permission: [.], from: self){ (Result)
             
         }
         
         
-    }
+    
     //Sign up
     @IBAction func signUpDidTouch(_ sender:
     AnyObject) {

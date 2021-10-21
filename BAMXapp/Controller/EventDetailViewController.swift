@@ -100,4 +100,11 @@ class EventDetailViewController: UIViewController {
         let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
         mapItem.openInMaps(launchOptions: launchOptions)
     }
+    
+    @IBAction func didTapDonate(_sender: Any){
+        let cvc = storyboard?.instantiateViewController(identifier: "NV_ID") as! UINavigationController
+        present(cvc, animated: true)
+    }
+    
+    
 }

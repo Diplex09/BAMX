@@ -1337,25 +1337,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado de Donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-Dr-ONx">
-                                <rect key="frame" x="35" y="79" width="344" height="36"/>
+                                <rect key="frame" x="35" y="79" width="344" height="35"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-fw-O52">
-                                <rect key="frame" x="35" y="155" width="344" height="90"/>
+                                <rect key="frame" x="35" y="154" width="344" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZV3-kB-ljA">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID DE DONACIÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVy-UZ-1ap">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                                 <color key="textColor" red="0.91764706370000004" green="0.24313727020000001" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23IKFD03M2LF422L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6G-aF-Smj">
-                                                <rect key="frame" x="150" y="0.0" width="194" height="20.5"/>
+                                                <rect key="frame" x="150.5" y="0.0" width="193.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1372,19 +1372,19 @@
                                                 <rect key="frame" x="0.0" y="4" width="344" height="36"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-bO-riV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="36"/>
                                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procesando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcn-zz-sq0">
-                                                        <rect key="frame" x="127.5" y="0.0" width="78" height="36"/>
+                                                        <rect key="frame" x="126.5" y="0.0" width="81" height="36"/>
                                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entregado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hj1-LF-cjC">
-                                                        <rect key="frame" x="275" y="0.0" width="69" height="36"/>
+                                                        <rect key="frame" x="274.5" y="0.0" width="69.5" height="36"/>
                                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1488,7 +1488,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dOB-HA-pci">
             <objects>
-                <navigationController id="1FR-ib-5Ee" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NV_ID" id="1FR-ib-5Ee" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="w9b-OM-1J8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X8a-h4-dm8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1600,6 +1600,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDonateWith_sender:" destination="VHP-MN-cqA" eventType="touchUpInside" id="a3m-aH-Fkl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-N0-2JA">
                                         <rect key="frame" x="177" y="0.0" width="147" height="45"/>
