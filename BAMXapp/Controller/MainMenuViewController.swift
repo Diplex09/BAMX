@@ -19,6 +19,7 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
     @IBOutlet weak var eventCardsView: iCarousel!
     @IBOutlet weak var greetLbl: UILabel!
     @IBOutlet weak var branchMapBtn: UIButton!
+    @IBOutlet weak var donationStatusBtn: UIButton!
     
     
     
@@ -148,6 +149,12 @@ class MainMenuViewController: UIViewController, iCarouselDelegate, iCarouselData
         let scheduleView = (storyboard?.instantiateViewController(identifier: "schedule"))!
         scheduleView.modalPresentationStyle = .popover
         present(scheduleView, animated: true, completion: nil)
+    }
+    
+    @IBAction func donationStatusDidTouch(_ sender: Any) {
+        let donationStatusView = (storyboard?.instantiateViewController(identifier: "donationstatus"))!
+        donationStatusView.modalPresentationStyle = .popover
+        present(donationStatusView, animated: true, completion: nil)
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120C98C62721034D00664DAA /* DonationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C98C52721034D00664DAA /* DonationStatusViewController.swift */; };
 		12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */; };
 		1293A1DF271F83E00067421E /* BranchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1293A1DE271F83E00067421E /* BranchMapViewController.swift */; };
 		6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656286C27039926003BB3F8 /* UIImageViewExtension.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120C98C52721034D00664DAA /* DonationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationStatusViewController.swift; sourceTree = "<group>"; };
 		12612EFB26EAC34F0002EAA9 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		1293A1DE271F83E00067421E /* BranchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchMapViewController.swift; sourceTree = "<group>"; };
 		172AB69E076738ACF54C48DB /* Pods-BAMXapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMXapp.release.xcconfig"; path = "Target Support Files/Pods-BAMXapp/Pods-BAMXapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				990A249B271F14D000B234F5 /* ProfileChangerViewController.swift */,
 				1293A1DE271F83E00067421E /* BranchMapViewController.swift */,
 				669146262720BD4300253402 /* ScheduleViewController.swift */,
+				120C98C52721034D00664DAA /* DonationStatusViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				92C0886826E7CFF800C95A41 /* IntroSlide.swift in Sources */,
 				990A249C271F14D000B234F5 /* ProfileChangerViewController.swift in Sources */,
 				6656286D27039926003BB3F8 /* UIImageViewExtension.swift in Sources */,
+				120C98C62721034D00664DAA /* DonationStatusViewController.swift in Sources */,
 				92C70AAD26E3F584008290EA /* FoodDonation.swift in Sources */,
 				12612EFC26EAC34F0002EAA9 /* RewardsViewController.swift in Sources */,
 				669146272720BD4300253402 /* ScheduleViewController.swift in Sources */,
