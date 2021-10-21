@@ -42,14 +42,26 @@ class BranchMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         mapView.showsTraffic = false
     }
     
+    // Function that find the nearest collection point
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-        if let location = locations.first {
-            manager.stopUpdatingLocation()
-            
-            render(location)
+        
+        var shortestDistance = Double.greatestFiniteMagnitude
+        var nearestLocation = CLLocation()
+        
+        for place in places {
+            let locationOfPlace = CLLocation(latitude: place.latitude, longitude: place.longitude)
+            let distanceInMeters = locations.first?.distance(from: locationOfPlace)
+            if (distanceInMeters! < shortestDistance) {
+                shortestDistance = distanceInMeters!
+                nearestLocation = locationOfPlace
+                print(nearestLocation)
+            }
         }
+        
+        render(nearestLocation)
     }
     
+    // Function to zoom of the map close to the location
     func render(_ location: CLLocation){
         
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
@@ -76,13 +88,14 @@ class BranchMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
             
             self.mapView.addAnnotation(marker);
         }
+        
     }
 }
 
 extension BranchMapViewController {
     @objc func getDirections(coords: CLLocationCoordinate2D) {
         print("Getting directions...")
-        var pm = MKPlacemark(coordinate: coords)
+        let pm = MKPlacemark(coordinate: coords)
         let mapItem = MKMapItem(placemark: pm)
         let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
         mapItem.openInMaps(launchOptions: launchOptions)
