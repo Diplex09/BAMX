@@ -1648,6 +1648,9 @@
                                 <rect key="frame" x="52" y="558" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="changeName_tapped:" destination="okl-oT-fq0" eventType="touchUpInside" id="HLi-df-GLo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAS-ZF-wje">
                                 <rect key="frame" x="42" y="93" width="265" height="34"/>
@@ -1689,6 +1692,8 @@
                     </view>
                     <connections>
                         <outlet property="currentUser" destination="Pve-Zz-34p" id="fsy-Jk-Yci"/>
+                        <outlet property="lastNameInput" destination="Xkk-gO-4u5" id="z2z-4v-NUB"/>
+                        <outlet property="nameInput" destination="22y-XJ-2vl" id="ebt-mD-qqk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7l-Lu-AVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
