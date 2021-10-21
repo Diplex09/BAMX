@@ -1703,47 +1703,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona el día y la hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-5n-hTP">
-                                <rect key="frame" x="20" y="111" width="344" height="21"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agendar recolección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nla-8Q-Hl3">
-                                <rect key="frame" x="20" y="44" width="374" height="36"/>
+                                <rect key="frame" x="35" y="155" width="344" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el día y la hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-5n-hTP">
+                                <rect key="frame" x="35" y="221" width="344" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-bS-JCm">
-                                <rect key="frame" x="20" y="154.5" width="374" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="J6E-7s-ZSJ"/>
-                                </constraints>
+                                <rect key="frame" x="35" y="267.5" width="344" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona el día y la hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-JC-2Cs">
-                                <rect key="frame" x="20" y="225" width="344" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona punto de recolección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-JC-2Cs">
+                                <rect key="frame" x="35" y="326.5" width="344" height="27"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MbB-gI-Wpz">
-                                <rect key="frame" x="20" y="268.5" width="374" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="mOJ-wL-1z6"/>
-                                </constraints>
+                                <rect key="frame" x="35" y="373.5" width="344" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCn-sS-8dl">
-                                <rect key="frame" x="50" y="349" width="314" height="44"/>
+                                <rect key="frame" x="35" y="457.5" width="344" height="45"/>
                                 <color key="backgroundColor" red="0.91764706370000004" green="0.24313727020000001" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="BDw-ky-c5B"/>
-                                    <constraint firstAttribute="width" constant="314" id="afu-z8-GLK"/>
+                                    <constraint firstAttribute="height" constant="45" id="Rgo-BC-dJ7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
                                 <state key="normal" title="Agendar">
@@ -1751,7 +1744,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1763,16 +1756,21 @@
                         <viewLayoutGuide key="safeArea" id="sQB-cn-Mpb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kCn-sS-8dl" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="50" id="0Gx-ut-ZA1"/>
-                            <constraint firstItem="Hdt-5n-hTP" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="20" id="C3w-fm-51z"/>
-                            <constraint firstItem="Erh-bS-JCm" firstAttribute="top" secondItem="Hdt-5n-hTP" secondAttribute="bottom" constant="17" id="H7X-On-wrL"/>
-                            <constraint firstItem="MbB-gI-Wpz" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="20" id="Pvb-RE-BeE"/>
-                            <constraint firstItem="MbB-gI-Wpz" firstAttribute="top" secondItem="Dpw-JC-2Cs" secondAttribute="bottom" constant="17" id="QXS-Cx-TA0"/>
-                            <constraint firstItem="Erh-bS-JCm" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="20" id="U3G-Fz-hej"/>
-                            <constraint firstItem="Dpw-JC-2Cs" firstAttribute="top" secondItem="Nla-8Q-Hl3" secondAttribute="bottom" constant="145" id="U61-tb-6M7"/>
-                            <constraint firstItem="Dpw-JC-2Cs" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="20" id="Yh3-WR-XkO"/>
-                            <constraint firstItem="kCn-sS-8dl" firstAttribute="top" secondItem="MbB-gI-Wpz" secondAttribute="bottom" constant="46.5" id="arM-Ti-uvb"/>
-                            <constraint firstItem="Hdt-5n-hTP" firstAttribute="top" secondItem="Nla-8Q-Hl3" secondAttribute="bottom" constant="31" id="uo0-JX-ZY7"/>
+                            <constraint firstItem="sQB-cn-Mpb" firstAttribute="trailing" secondItem="Dpw-JC-2Cs" secondAttribute="trailing" constant="35" id="1OO-Rh-lzc"/>
+                            <constraint firstItem="sQB-cn-Mpb" firstAttribute="trailing" secondItem="Erh-bS-JCm" secondAttribute="trailing" constant="35" id="2U3-Z8-na5"/>
+                            <constraint firstItem="kCn-sS-8dl" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="35" id="EtU-xT-G5g"/>
+                            <constraint firstItem="MbB-gI-Wpz" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="35" id="G4g-t8-gPg"/>
+                            <constraint firstItem="Hdt-5n-hTP" firstAttribute="top" secondItem="Nla-8Q-Hl3" secondAttribute="bottom" constant="30" id="GvP-Ju-hSh"/>
+                            <constraint firstItem="sQB-cn-Mpb" firstAttribute="trailing" secondItem="kCn-sS-8dl" secondAttribute="trailing" constant="35" id="J09-zM-6Qg"/>
+                            <constraint firstItem="Dpw-JC-2Cs" firstAttribute="top" secondItem="Erh-bS-JCm" secondAttribute="bottom" constant="25" id="VVA-nJ-esy"/>
+                            <constraint firstItem="sQB-cn-Mpb" firstAttribute="trailing" secondItem="Hdt-5n-hTP" secondAttribute="trailing" constant="35" id="ZLm-n0-I7A"/>
+                            <constraint firstItem="Erh-bS-JCm" firstAttribute="top" secondItem="Hdt-5n-hTP" secondAttribute="bottom" constant="20" id="aNR-HD-mtf"/>
+                            <constraint firstItem="sQB-cn-Mpb" firstAttribute="trailing" secondItem="MbB-gI-Wpz" secondAttribute="trailing" constant="35" id="b3v-aX-fzx"/>
+                            <constraint firstItem="kCn-sS-8dl" firstAttribute="top" secondItem="MbB-gI-Wpz" secondAttribute="bottom" constant="50" id="q34-ag-iUX"/>
+                            <constraint firstItem="MbB-gI-Wpz" firstAttribute="top" secondItem="Dpw-JC-2Cs" secondAttribute="bottom" constant="20" id="sjd-78-4Mj"/>
+                            <constraint firstItem="Hdt-5n-hTP" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="35" id="sve-wH-8g3"/>
+                            <constraint firstItem="Dpw-JC-2Cs" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="35" id="xSf-vl-vuV"/>
+                            <constraint firstItem="Erh-bS-JCm" firstAttribute="leading" secondItem="sQB-cn-Mpb" secondAttribute="leading" constant="35" id="zh9-Vy-ccQ"/>
                         </constraints>
                     </view>
                     <connections>

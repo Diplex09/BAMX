@@ -101,7 +101,7 @@ class ScheduleViewController: UIViewController {
                     preferredStyle: .alert
                 )
                 
-                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                //alert.addAction(UIAlertAction(title: "OK", style: .default))
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
                     (action) -> Void in
                     // if the input matches the required text
