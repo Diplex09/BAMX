@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 
 class SignUpViewController: UIViewController {
     
@@ -15,12 +16,25 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var enterEmail: UITextField!
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
+    @IBOutlet var facebookBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
     }
     
+    
+    
+    @IBAction func didTouchFacebookBtn(_ sender: Any) {
+        
+        let loginManager = LoginManager()
+        loginManager.logOut()
+        loginManager.logIn(permission: [.], from: self){ (Result)
+            
+        }
+        
+        
+    }
     //Sign up
     @IBAction func signUpDidTouch(_ sender:
     AnyObject) {
@@ -72,6 +86,12 @@ class SignUpViewController: UIViewController {
                 print("Error creating user: \(String(describing: error?.localizedDescription))")
             }
         }
+        
+        
+        
+        
     }
-
+    
+    
+    
 }

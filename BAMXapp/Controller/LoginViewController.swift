@@ -16,6 +16,7 @@ class LoginViewController: UIViewController
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var createUser: UIButton!
     
+    
     var handle: AuthStateDidChangeListenerHandle?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

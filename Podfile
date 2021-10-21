@@ -10,5 +10,6 @@ target 'BAMXapp' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'iCarousel'
+  pod 'FBSDKLoginKit'
   use_frameworks!
 end
